@@ -376,238 +376,2965 @@
         
         // Question banks for each topic
         const questionBanks = {
-            cell: [
-                {
-                    question: "Which organelle is known as the 'powerhouse of the cell'?",
-                    options: ["Nucleus", "Mitochondria", "Endoplasmic Reticulum", "Golgi Apparatus"],
-                    answer: 1
-                },
-                {
-                    question: "What is the main function of the cell membrane?",
-                    options: ["Energy production", "Protein synthesis", "Control of cell division", "Selective barrier between cell and environment"],
-                    answer: 3
-                },
-                {
-                    question: "Which of these is NOT a component of the cytoskeleton?",
-                    options: ["Microfilaments", "Intermediate filaments", "Microtubules", "Microsomes"],
-                    answer: 3
-                },
-                {
-                    question: "What is the main site of protein synthesis in the cell?",
-                    options: ["Nucleus", "Mitochondria", "Ribosomes", "Lysosomes"],
-                    answer: 2
-                },
-                {
-                    question: "Which organelle is responsible for detoxification of harmful substances in liver cells?",
-                    options: ["Smooth endoplasmic reticulum", "Rough endoplasmic reticulum", "Golgi apparatus", "Lysosomes"],
-                    answer: 0
-                },
-                {
-                    question: "What is the primary function of lysosomes?",
-                    options: ["Protein synthesis", "Energy production", "Cellular digestion", "Lipid synthesis"],
-                    answer: 2
-                },
-                {
-                    question: "What type of cell lacks a nucleus?",
-                    options: ["Plant cell", "Animal cell", "Prokaryotic cell", "Stem cell"],
-                    answer: 2
-                },
-                {
-                    question: "Which of these is unique to plant cells?",
-                    options: ["Mitochondria", "Cell wall", "Cell membrane", "Cytoplasm"],
-                    answer: 1
-                },
-                {
-                    question: "What is the function of chloroplasts in plant cells?",
-                    options: ["Cellular respiration", "Photosynthesis", "Protein synthesis", "Waste removal"],
-                    answer: 1
-                },
-                {
-                    question: "Which cell organelle contains digestive enzymes?",
-                    options: ["Nucleus", "Mitochondria", "Lysosomes", "Golgi apparatus"],
-                    answer: 2
-                },
-                {
-                    question: "What is the site of cellular respiration in eukaryotic cells?",
-                    options: ["Nucleus", "Mitochondria", "Endoplasmic reticulum", "Golgi apparatus"],
-                    answer: 1
-                },
-                {
-                    question: "The process by which cells engulf large particles is called:",
-                    options: ["Exocytosis", "Endocytosis", "Phagocytosis", "Pinocytosis"],
-                    answer: 2
-                },
-                {
-                    question: "Which organelle is responsible for packaging and secreting cellular products?",
-                    options: ["Endoplasmic reticulum", "Golgi apparatus", "Lysosome", "Peroxisome"],
-                    answer: 1
-                },
-                {
-                    question: "What is the main component of the cell membrane?",
-                    options: ["Carbohydrates", "Proteins", "Phospholipids", "Nucleic acids"],
-                    answer: 2
-                },
-                {
-                    question: "Which of these is NOT a phase of the cell cycle?",
-                    options: ["G1 phase", "S phase", "G2 phase", "E phase"],
-                    answer: 3
-                }
-            ],
-            genetics: [
-                {
-                    question: "What is the structure of DNA called?",
-                    options: ["Single helix", "Double helix", "Triple helix", "Quadruple helix"],
-                    answer: 1
-                },
-                {
-                    question: "Which of these is NOT a nitrogenous base found in DNA?",
-                    options: ["Adenine", "Thymine", "Uracil", "Guanine"],
-                    answer: 2
-                },
-                {
-                    question: "What is the process by which DNA makes a copy of itself called?",
-                    options: ["Translation", "Transcription", "Replication", "Recombination"],
-                    answer: 2
-                },
-                {
-                    question: "Who discovered the structure of DNA?",
-                    options: ["Watson and Crick", "Mendel", "Darwin", "Linnaeus"],
-                    answer: 0
-                },
-                {
-                    question: "What is the central dogma of molecular biology?",
-                    options: ["DNA → RNA → Protein", "Protein → RNA → DNA", "RNA → DNA → Protein", "DNA → Protein → RNA"],
-                    answer: 0
-                },
-                {
-                    question: "What is a gene?",
-                    options: ["A type of RNA", "A sequence of DNA that codes for a protein", "A chromosome", "A type of organelle"],
-                    answer: 1
-                },
-                {
-                    question: "What are the physical expressions of genes called?",
-                    options: ["Genotype", "Phenotype", "Karyotype", "Prototype"],
-                    answer: 1
-                },
-                {
-                    question: "Which of these is an example of a sex-linked disorder?",
-                    options: ["Down syndrome", "Cystic fibrosis", "Color blindness", "Sickle cell anemia"],
-                    answer: 2
-                },
-                {
-                    question: "What is a mutation?",
-                    options: ["A change in phenotype", "A change in the DNA sequence", "A change in chromosome number", "A change in gene expression"],
-                    answer: 1
-                },
-                {
-                    question: "Which scientist is considered the father of genetics?",
-                    options: ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "Alexander Fleming"],
-                    answer: 1
-                },
-                {
-                    question: "How many pairs of chromosomes are in a normal human cell?",
-                    options: ["21", "23", "46", "48"],
-                    answer: 1
-                },
-                {
-                    question: "What is the term for having three sets of chromosomes instead of two?",
-                    options: ["Monosomy", "Trisomy", "Polyploidy", "Triploidy"],
-                    answer: 3
-                },
-                {
-                    question: "Which of these is NOT a type of RNA?",
-                    options: ["mRNA", "tRNA", "rRNA", "dRNA"],
-                    answer: 3
-                },
-                {
-                    question: "What is genetic engineering?",
-                    options: ["The study of heredity", "The manipulation of genetic material", "The breeding of animals", "The cloning of organisms"],
-                    answer: 1
-                },
-                {
-                    question: "What is a codon?",
-                    options: ["A segment of DNA", "A type of RNA", "A sequence of three nucleotides", "A type of protein"],
-                    answer: 2
-                }
-            ],
-            anatomy: [
-                {
-                    question: "Which of these is NOT one of the four tissue types in the human body?",
-                    options: ["Epithelial", "Connective", "Muscular", "Reproductive"],
-                    answer: 3
-                },
-                {
-                    question: "What is the largest organ in the human body?",
-                    options: ["Liver", "Brain", "Skin", "Heart"],
-                    answer: 2
-                },
-                {
-                    question: "Which bone is the longest in the human body?",
-                    options: ["Femur", "Tibia", "Humerus", "Radius"],
-                    answer: 0
-                },
-                {
-                    question: "What is the main function of the respiratory system?",
-                    options: ["To circulate blood", "To digest food", "To exchange gases", "To filter waste"],
-                    answer: 2
-                },
-                {
-                    question: "Which of these is NOT part of the digestive system?",
-                    options: ["Esophagus", "Stomach", "Trachea", "Small intestine"],
-                    answer: 2
-                },
-                {
-                    question: "What is the main function of red blood cells?",
-                    options: ["Fighting infection", "Blood clotting", "Transporting oxygen", "Producing antibodies"],
-                    answer: 2
-                },
-                {
-                    question: "Which chamber of the heart pumps blood to the lungs?",
-                    options: ["Left atrium", "Left ventricle", "Right atrium", "Right ventricle"],
-                    answer: 3
-                },
-                {
-                    question: "What is the main function of the lymphatic system?",
-                    options: ["Digestion", "Immunity", "Hormone production", "Blood circulation"],
-                    answer: 1
-                },
-                {
-                    question: "Which of these is NOT a part of the central nervous system?",
-                    options: ["Brain", "Spinal cord", "Peripheral nerves", "Cerebrospinal fluid"],
-                    answer: 2
-                },
-                {
-                    question: "What is the main function of the endocrine system?",
-                    options: ["Blood circulation", "Hormone regulation", "Digestion", "Waste excretion"],
-                    answer: 1
-                },
-                {
-                    question: "Which structure connects muscles to bones?",
-                    options: ["Ligaments", "Tendons", "Cartilage", "Fascia"],
-                    answer: 1
-                },
-                {
-                    question: "Where is bile produced in the human body?",
-                    options: ["Gallbladder", "Liver", "Pancreas", "Stomach"],
-                    answer: 1
-                },
-                {
-                    question: "Which part of the brain is responsible for balance and coordination?",
-                    options: ["Cerebrum", "Cerebellum", "Medulla oblongata", "Thalamus"],
-                    answer: 1
-                },
-                {
-                    question: "What is the function of the nephron?",
-                    options: ["Filtering blood in the kidneys", "Producing bile in the liver", "Absorbing nutrients in the intestines", "Producing hormones in the pancreas"],
-                    answer: 0
-                },
-                {
-                    question: "Which gland produces insulin?",
-                    options: ["Thyroid gland", "Adrenal gland", "Pituitary gland", "Pancreas"],
-                    answer: 3
-                }
-            ]
-        };
+            "cell": [
+    {
+      "question": "Which organelle is known as the powerhouse of the cell?",
+      "options": ["Nucleus", "Mitochondria", "Golgi apparatus", "Endoplasmic reticulum"],
+      "answer": 1
+    },
+    {
+      "question": "What is the primary function of the cell membrane?",
+      "options": ["Energy production", "Protein synthesis", "Selective permeability", "DNA replication"],
+      "answer": 2
+    },
+    {
+      "question": "Which structure is responsible for protein synthesis in a cell?",
+      "options": ["Ribosome", "Lysosome", "Vacuole", "Centriole"],
+      "answer": 0
+    },
+    {
+      "question": "What is the process by which cells engulf particles or fluids?",
+      "options": ["Exocytosis", "Osmosis", "Endocytosis", "Diffusion"],
+      "answer": 2
+    },
+    {
+      "question": "Which phase of the cell cycle involves DNA replication?",
+      "options": ["G1", "S", "G2", "M"],
+      "answer": 1
+    },
+        {
+    "question": "What is the basic unit of life?",
+    "options": ["Atom", "Molecule", "Cell", "Tissue"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is responsible for producing ATP, the energy currency of the cell?",
+    "options": ["Nucleus", "Mitochondrion", "Ribosome", "Lysosome"],
+    "answer": 1
+},
+{
+    "question": "What structure controls the movement of substances in and out of the cell?",
+    "options": ["Cytoplasm", "Nucleus", "Cell membrane", "Golgi apparatus"],
+    "answer": 2
+},
+{
+    "question": "Which organelle contains genetic material and controls cell activities?",
+    "options": ["Mitochondrion", "Nucleus", "Endoplasmic reticulum", "Lysosome"],
+    "answer": 1
+},
+{
+    "question": "What is the primary function of ribosomes?",
+    "options": ["Protein synthesis", "Lipid production", "DNA replication", "Energy production"],
+    "answer": 0
+},
+{
+    "question": "Which organelle is responsible for packaging and transporting proteins?",
+    "options": ["Lysosome", "Golgi apparatus", "Nucleus", "Mitochondrion"],
+    "answer": 1
+},
+{
+    "question": "What is the gel-like substance inside the cell that holds organelles in place?",
+    "options": ["Nucleus", "Cytoplasm", "Vacuole", "Endoplasmic reticulum"],
+    "answer": 1
+},
+{
+    "question": "Which type of transport requires energy to move substances against their concentration gradient?",
+    "options": ["Osmosis", "Facilitated diffusion", "Active transport", "Passive diffusion"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is responsible for breaking down waste and cellular debris?",
+    "options": ["Mitochondrion", "Lysosome", "Ribosome", "Chloroplast"],
+    "answer": 1
+},
+{
+    "question": "Which structure is found in plant cells but not in animal cells?",
+    "options": ["Mitochondrion", "Ribosome", "Cell wall", "Nucleus"],
+    "answer": 2
+},
+{
+    "question": "What is the process by which cells divide to form two identical daughter cells?",
+    "options": ["Meiosis", "Binary fission", "Mitosis", "Endocytosis"],
+    "answer": 2
+},
+{
+    "question": "Which phase of the cell cycle involves the replication of DNA?",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "answer": 1
+},
+{
+    "question": "What type of macromolecule makes up the cell membrane?",
+    "options": ["Proteins", "Lipids", "Carbohydrates", "Nucleic acids"],
+    "answer": 1
+},
+{
+    "question": "What is the function of the smooth endoplasmic reticulum?",
+    "options": ["Protein synthesis", "Lipid synthesis", "Energy production", "DNA storage"],
+    "answer": 1
+},
+{
+    "question": "What is the function of chloroplasts in plant cells?",
+    "options": ["Cellular respiration", "Photosynthesis", "Protein synthesis", "Lipid production"],
+    "answer": 1
+},
+{
+    "question": "What is the process by which water moves across a selectively permeable membrane?",
+    "options": ["Diffusion", "Facilitated diffusion", "Active transport", "Osmosis"],
+    "answer": 3
+},
+{
+    "question": "Which structure is involved in cell division and helps form the mitotic spindle?",
+    "options": ["Ribosome", "Centriole", "Nucleolus", "Lysosome"],
+    "answer": 1
+},
+{
+    "question": "Which molecule carries genetic information in cells?",
+    "options": ["RNA", "Protein", "DNA", "Carbohydrates"],
+    "answer": 2
+},
+{
+    "question": "Which type of RNA carries amino acids to the ribosome for protein synthesis?",
+    "options": ["mRNA", "tRNA", "rRNA", "siRNA"],
+    "answer": 1
+},
+{
+    "question": "What process allows large molecules to enter a cell by engulfing them in a vesicle?",
+    "options": ["Exocytosis", "Endocytosis", "Osmosis", "Diffusion"],
+    "answer": 1
+},
+      {
+    "question": "What is the main function of the nucleolus?",
+    "options": ["DNA replication", "RNA synthesis", "Protein folding", "Energy production"],
+    "answer": 1
+},
+{
+    "question": "Which organelle is known as the 'powerhouse of the cell'?",
+    "options": ["Nucleus", "Mitochondrion", "Golgi apparatus", "Ribosome"],
+    "answer": 1
+},
+{
+    "question": "Which type of cell lacks a nucleus?",
+    "options": ["Animal cell", "Plant cell", "Prokaryotic cell", "Eukaryotic cell"],
+    "answer": 2
+},
+{
+    "question": "What is the function of peroxisomes?",
+    "options": ["Protein synthesis", "Detoxification", "Lipid storage", "Photosynthesis"],
+    "answer": 1
+},
+{
+    "question": "Which structure helps maintain cell shape and provides mechanical support?",
+    "options": ["Golgi apparatus", "Cytoskeleton", "Endoplasmic reticulum", "Lysosome"],
+    "answer": 1
+},
+{
+    "question": "What is the role of glycoproteins in the cell membrane?",
+    "options": ["Energy production", "Cell recognition", "DNA storage", "Protein synthesis"],
+    "answer": 1
+},
+{
+    "question": "Which organelle modifies and sorts proteins before they are transported?",
+    "options": ["Lysosome", "Mitochondrion", "Golgi apparatus", "Nucleus"],
+    "answer": 2
+},
+{
+    "question": "What is the primary function of the rough endoplasmic reticulum?",
+    "options": ["Protein synthesis", "Lipid synthesis", "Detoxification", "DNA replication"],
+    "answer": 0
+},
+{
+    "question": "Which cell organelle is responsible for apoptosis (programmed cell death)?",
+    "options": ["Lysosome", "Mitochondrion", "Nucleus", "Ribosome"],
+    "answer": 1
+},
+{
+    "question": "Which type of junction allows direct communication between adjacent animal cells?",
+    "options": ["Desmosome", "Gap junction", "Tight junction", "Plasmodesmata"],
+    "answer": 1
+},
+{
+    "question": "Which phase of mitosis involves the chromosomes aligning in the center of the cell?",
+    "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "answer": 1
+},
+{
+    "question": "Which molecule is primarily responsible for catalyzing biochemical reactions in the cell?",
+    "options": ["Lipids", "Proteins", "Carbohydrates", "Enzymes"],
+    "answer": 3
+},
+{
+    "question": "What is the primary function of vacuoles in plant cells?",
+    "options": ["Protein synthesis", "Storage of nutrients and waste", "Energy production", "Cell communication"],
+    "answer": 1
+},
+{
+    "question": "Which transport mechanism moves molecules from high to low concentration without energy?",
+    "options": ["Active transport", "Osmosis", "Facilitated diffusion", "Endocytosis"],
+    "answer": 2
+},
+{
+    "question": "What is the role of histones in the nucleus?",
+    "options": ["RNA synthesis", "Protein degradation", "DNA packaging", "Lipid metabolism"],
+    "answer": 2
+},
+{
+    "question": "Which cellular process converts glucose into ATP in the presence of oxygen?",
+    "options": ["Fermentation", "Photosynthesis", "Glycolysis", "Cellular respiration"],
+    "answer": 3
+},
+{
+    "question": "Which type of RNA forms the core of ribosomes and aids in protein synthesis?",
+    "options": ["mRNA", "tRNA", "rRNA", "siRNA"],
+    "answer": 2
+},
+{
+    "question": "What is the main difference between smooth and rough endoplasmic reticulum?",
+    "options": ["Smooth ER has ribosomes, rough ER does not", "Smooth ER produces proteins, rough ER produces lipids", "Rough ER has ribosomes, smooth ER does not", "Smooth ER is found only in prokaryotic cells"],
+    "answer": 2
+},
+{
+    "question": "Which cellular structure allows substances to pass between plant cells?",
+    "options": ["Plasmodesmata", "Tight junctions", "Gap junctions", "Desmosomes"],
+    "answer": 0
+},
+{
+    "question": "What is the final stage of mitosis before the cell fully splits?",
+    "options": ["Prophase", "Metaphase", "Telophase", "Anaphase"],
+    "answer": 2
+},
+      {
+    "question": "Which organelle is responsible for the synthesis of ribosomal RNA?",
+    "options": ["Ribosome", "Nucleolus", "Mitochondrion", "Golgi apparatus"],
+    "answer": 1
+},
+{
+    "question": "What type of molecule makes up the majority of the plasma membrane?",
+    "options": ["Carbohydrates", "Proteins", "Lipids", "Nucleic acids"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is responsible for digesting and recycling cellular waste?",
+    "options": ["Mitochondrion", "Lysosome", "Golgi apparatus", "Endoplasmic reticulum"],
+    "answer": 1
+},
+{
+    "question": "Which cellular process involves the engulfing of large particles by the cell membrane?",
+    "options": ["Exocytosis", "Osmosis", "Phagocytosis", "Diffusion"],
+    "answer": 2
+},
+{
+    "question": "Which enzyme is responsible for unzipping DNA during replication?",
+    "options": ["Ligase", "Polymerase", "Helicase", "Primase"],
+    "answer": 2
+},
+{
+    "question": "What structure helps plant cells maintain their rigid shape?",
+    "options": ["Cytoskeleton", "Cell wall", "Chloroplast", "Plasma membrane"],
+    "answer": 1
+},
+{
+    "question": "What is the role of tRNA in protein synthesis?",
+    "options": ["Carries genetic code", "Transports amino acids", "Forms ribosomes", "Catalyzes peptide bonds"],
+    "answer": 1
+},
+{
+    "question": "Which stage of cellular respiration produces the most ATP?",
+    "options": ["Glycolysis", "Krebs cycle", "Electron transport chain", "Fermentation"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is responsible for producing lipids and detoxifying toxins?",
+    "options": ["Smooth ER", "Rough ER", "Mitochondrion", "Ribosome"],
+    "answer": 0
+},
+{
+    "question": "What is the term for programmed cell death?",
+    "options": ["Necrosis", "Mitosis", "Apoptosis", "Autophagy"],
+    "answer": 2
+},
+{
+    "question": "Which phase of the cell cycle does DNA replication occur in?",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "answer": 1
+},
+{
+    "question": "Which organelle is responsible for photosynthesis in plant cells?",
+    "options": ["Mitochondrion", "Chloroplast", "Ribosome", "Golgi apparatus"],
+    "answer": 1
+},
+{
+    "question": "What type of transport requires energy to move molecules against their concentration gradient?",
+    "options": ["Passive transport", "Facilitated diffusion", "Active transport", "Osmosis"],
+    "answer": 2
+},
+{
+    "question": "Which structure is responsible for organizing microtubules during cell division?",
+    "options": ["Nucleus", "Centrosome", "Golgi apparatus", "Lysosome"],
+    "answer": 1
+},
+{
+    "question": "Which organelle plays a key role in cellular respiration?",
+    "options": ["Chloroplast", "Mitochondrion", "Golgi apparatus", "Peroxisome"],
+    "answer": 1
+},
+{
+    "question": "Which molecule serves as the energy currency of the cell?",
+    "options": ["Glucose", "ATP", "NADH", "DNA"],
+    "answer": 1
+},
+{
+    "question": "Which phase of mitosis do sister chromatids separate?",
+    "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "answer": 2
+},
+{
+    "question": "What type of RNA carries genetic information from DNA to ribosomes?",
+    "options": ["mRNA", "tRNA", "rRNA", "siRNA"],
+    "answer": 0
+},
+{
+    "question": "Which structure regulates the passage of substances into and out of the nucleus?",
+    "options": ["Nuclear membrane", "Cell membrane", "Nucleolus", "Nuclear pore"],
+    "answer": 3
+},
+{
+    "question": "Which process converts light energy into chemical energy?",
+    "options": ["Glycolysis", "Cellular respiration", "Photosynthesis", "Fermentation"],
+    "answer": 2
+},
+      {
+    "question": "Which organelle is responsible for packaging and modifying proteins?",
+    "options": ["Mitochondrion", "Golgi apparatus", "Ribosome", "Lysosome"],
+    "answer": 1
+},
+{
+    "question": "What is the primary function of ribosomes in a cell?",
+    "options": ["DNA replication", "Protein synthesis", "Lipid metabolism", "Energy production"],
+    "answer": 1
+},
+{
+    "question": "Which process occurs in the mitochondria to generate ATP?",
+    "options": ["Photosynthesis", "Glycolysis", "Cellular respiration", "Fermentation"],
+    "answer": 2
+},
+{
+    "question": "What is the main structural component of plant cell walls?",
+    "options": ["Chitin", "Cellulose", "Keratin", "Collagen"],
+    "answer": 1
+},
+{
+    "question": "Which type of RNA is a component of ribosomes?",
+    "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+    "answer": 2
+},
+{
+    "question": "What is the primary function of the endoplasmic reticulum?",
+    "options": ["Transport of molecules", "Lipid synthesis", "Protein folding", "All of the above"],
+    "answer": 3
+},
+{
+    "question": "Which cellular structure is responsible for maintaining cell shape and internal organization?",
+    "options": ["Cell membrane", "Cytoskeleton", "Mitochondrion", "Nucleus"],
+    "answer": 1
+},
+{
+    "question": "What is the function of peroxisomes in a cell?",
+    "options": ["Protein synthesis", "Detoxification and lipid metabolism", "DNA replication", "ATP production"],
+    "answer": 1
+},
+{
+    "question": "Which phase of the cell cycle involves the separation of duplicated chromosomes?",
+    "options": ["Interphase", "Metaphase", "Anaphase", "Cytokinesis"],
+    "answer": 2
+},
+{
+    "question": "Which type of transport moves molecules against the concentration gradient?",
+    "options": ["Passive transport", "Diffusion", "Active transport", "Osmosis"],
+    "answer": 2
+},
+{
+    "question": "Which cellular structure contains digestive enzymes to break down waste?",
+    "options": ["Nucleus", "Lysosome", "Golgi apparatus", "Endoplasmic reticulum"],
+    "answer": 1
+},
+{
+    "question": "Which organelle is responsible for converting sunlight into chemical energy?",
+    "options": ["Mitochondrion", "Chloroplast", "Nucleus", "Ribosome"],
+    "answer": 1
+},
+{
+    "question": "Which part of a phospholipid is hydrophobic?",
+    "options": ["Phosphate group", "Glycerol backbone", "Fatty acid tails", "Carbohydrate chains"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is known as the 'powerhouse' of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondrion", "Golgi apparatus"],
+    "answer": 2
+},
+{
+    "question": "Which molecule acts as a messenger between DNA and ribosomes?",
+    "options": ["mRNA", "tRNA", "rRNA", "DNA"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is a function of the cell membrane?",
+    "options": ["Protein synthesis", "DNA replication", "Selective permeability", "Energy production"],
+    "answer": 2
+},
+{
+    "question": "What is the role of spindle fibers during cell division?",
+    "options": ["Transport proteins", "Move chromosomes", "Produce ATP", "Regulate metabolism"],
+    "answer": 1
+},
+{
+    "question": "Which process involves the intake of extracellular fluid into a cell?",
+    "options": ["Endocytosis", "Exocytosis", "Pinocytosis", "Osmosis"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is involved in sorting and directing cellular products?",
+    "options": ["Mitochondrion", "Golgi apparatus", "Ribosome", "Nucleolus"],
+    "answer": 1
+},
+{
+    "question": "Which enzyme is responsible for synthesizing new DNA strands?",
+    "options": ["Helicase", "DNA polymerase", "Ligase", "Topoisomerase"],
+    "answer": 1
+},
+      {
+    "question": "Which organelle is responsible for breaking down cellular waste and recycling components?",
+    "options": ["Lysosome", "Mitochondrion", "Peroxisome", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the nucleolus?",
+    "options": ["Lipid synthesis", "Ribosome production", "Protein folding", "ATP production"],
+    "answer": 1
+},
+{
+    "question": "Which molecule is the primary carrier of genetic information?",
+    "options": ["RNA", "DNA", "Proteins", "Lipids"],
+    "answer": 1
+},
+{
+    "question": "Which type of junction allows direct communication between adjacent animal cells?",
+    "options": ["Desmosomes", "Gap junctions", "Tight junctions", "Plasmodesmata"],
+    "answer": 1
+},
+{
+    "question": "Which structure regulates what enters and exits the nucleus?",
+    "options": ["Nuclear membrane", "Nuclear pores", "Nucleolus", "Chromatin"],
+    "answer": 1
+},
+{
+    "question": "Which organelle helps detoxify harmful substances in the cell?",
+    "options": ["Ribosome", "Peroxisome", "Golgi apparatus", "Lysosome"],
+    "answer": 1
+},
+{
+    "question": "Which type of cell lacks a nucleus?",
+    "options": ["Eukaryotic cell", "Prokaryotic cell", "Animal cell", "Plant cell"],
+    "answer": 1
+},
+{
+    "question": "Which process allows water molecules to move across a selectively permeable membrane?",
+    "options": ["Active transport", "Osmosis", "Facilitated diffusion", "Endocytosis"],
+    "answer": 1
+},
+{
+    "question": "Which protein structure level involves the formation of alpha-helices and beta-sheets?",
+    "options": ["Primary", "Secondary", "Tertiary", "Quaternary"],
+    "answer": 1
+},
+{
+    "question": "Which component of the cytoskeleton is involved in cell movement and shape?",
+    "options": ["Microtubules", "Microfilaments", "Intermediate filaments", "Centrioles"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is a key characteristic of stem cells?",
+    "options": ["They can divide indefinitely", "They produce ATP", "They only exist in embryos", "They lack DNA"],
+    "answer": 0
+},
+{
+    "question": "Which organelle contains its own DNA, suggesting an endosymbiotic origin?",
+    "options": ["Golgi apparatus", "Mitochondrion", "Ribosome", "Endoplasmic reticulum"],
+    "answer": 1
+},
+{
+    "question": "Which phase of mitosis is characterized by the chromosomes lining up at the cell's equator?",
+    "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "answer": 1
+},
+{
+    "question": "Which type of cell division produces genetically identical daughter cells?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Cytokinesis"],
+    "answer": 0
+},
+{
+    "question": "Which structure in plant cells stores water and maintains turgor pressure?",
+    "options": ["Chloroplast", "Vacuole", "Mitochondrion", "Golgi apparatus"],
+    "answer": 1
+},
+{
+    "question": "Which part of the cell cycle is primarily dedicated to cell growth and DNA replication?",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "answer": 1
+},
+{
+    "question": "Which enzyme is responsible for unwinding DNA during replication?",
+    "options": ["Ligase", "Helicase", "Topoisomerase", "DNA polymerase"],
+    "answer": 1
+},
+{
+    "question": "Which type of transport requires energy to move molecules across the cell membrane?",
+    "options": ["Facilitated diffusion", "Passive transport", "Active transport", "Osmosis"],
+    "answer": 2
+},
+{
+    "question": "Which part of a phospholipid interacts with water?",
+    "options": ["Fatty acid tails", "Hydrophobic region", "Hydrophilic head", "Lipid bilayer"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is responsible for synthesizing lipids?",
+    "options": ["Smooth endoplasmic reticulum", "Rough endoplasmic reticulum", "Ribosome", "Lysosome"],
+    "answer": 0
+},
+      {
+    "question": "Which organelle is known as the 'powerhouse of the cell'?",
+    "options": ["Chloroplast", "Mitochondrion", "Nucleus", "Golgi apparatus"],
+    "answer": 1
+},
+{
+    "question": "Which cellular structure is primarily responsible for protein synthesis?",
+    "options": ["Ribosome", "Nucleus", "Golgi apparatus", "Lysosome"],
+    "answer": 0
+},
+{
+    "question": "What is the main function of the Golgi apparatus?",
+    "options": ["DNA replication", "Protein modification and transport", "ATP production", "Lipid breakdown"],
+    "answer": 1
+},
+{
+    "question": "Which molecule forms the basic structure of the cell membrane?",
+    "options": ["Proteins", "Carbohydrates", "Phospholipids", "Nucleic acids"],
+    "answer": 2
+},
+{
+    "question": "Which structure in animal cells aids in cell division?",
+    "options": ["Centrioles", "Ribosomes", "Lysosomes", "Mitochondria"],
+    "answer": 0
+},
+{
+    "question": "Which type of endoplasmic reticulum (ER) is associated with ribosomes?",
+    "options": ["Rough ER", "Smooth ER", "Golgi ER", "Nuclear ER"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the cytoplasm in a cell?",
+    "options": ["DNA storage", "Cell division", "Providing a medium for cellular processes", "Energy production"],
+    "answer": 2
+},
+{
+    "question": "Which organelle contains digestive enzymes that break down waste materials in the cell?",
+    "options": ["Golgi apparatus", "Mitochondrion", "Lysosome", "Peroxisome"],
+    "answer": 2
+},
+{
+    "question": "Which process allows cells to engulf large particles?",
+    "options": ["Osmosis", "Pinocytosis", "Phagocytosis", "Exocytosis"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is responsible for the synthesis of ribosomal RNA (rRNA)?",
+    "options": ["Nucleolus", "Ribosome", "Endoplasmic reticulum", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "Which term describes a solution where the concentration of solutes is equal inside and outside the cell?",
+    "options": ["Hypertonic", "Hypotonic", "Isotonic", "Osmotic"],
+    "answer": 2
+},
+{
+    "question": "Which type of RNA carries the genetic code from DNA to ribosomes?",
+    "options": ["mRNA", "tRNA", "rRNA", "siRNA"],
+    "answer": 0
+},
+{
+    "question": "Which part of the mitochondrion is responsible for ATP production?",
+    "options": ["Outer membrane", "Inner membrane", "Cristae", "Matrix"],
+    "answer": 2
+},
+{
+    "question": "Which type of transport moves substances against a concentration gradient using ATP?",
+    "options": ["Passive transport", "Osmosis", "Facilitated diffusion", "Active transport"],
+    "answer": 3
+},
+{
+    "question": "Which component of the cytoskeleton is involved in intracellular transport?",
+    "options": ["Microtubules", "Intermediate filaments", "Microfilaments", "Centrioles"],
+    "answer": 0
+},
+{
+    "question": "Which phase of the cell cycle follows mitosis?",
+    "options": ["G1 phase", "S phase", "G2 phase", "Cytokinesis"],
+    "answer": 3
+},
+{
+    "question": "Which type of cell-cell junction prevents leakage of extracellular fluid between cells?",
+    "options": ["Tight junction", "Gap junction", "Desmosome", "Plasmodesmata"],
+    "answer": 0
+},
+{
+    "question": "Which type of cells contain chloroplasts?",
+    "options": ["Animal cells", "Fungal cells", "Plant cells", "Bacterial cells"],
+    "answer": 2
+},
+{
+    "question": "Which molecule is the main energy carrier in cells?",
+    "options": ["ATP", "DNA", "RNA", "Glucose"],
+    "answer": 0
+},
+{
+    "question": "Which part of the nucleus contains genetic material?",
+    "options": ["Nucleolus", "Chromatin", "Nuclear envelope", "Nuclear pore"],
+    "answer": 1
+},
+      {
+    "question": "Which organelle helps in the detoxification of harmful substances in the liver?",
+    "options": ["Mitochondrion", "Rough ER", "Smooth ER", "Golgi apparatus"],
+    "answer": 2
+},
+{
+    "question": "What is the primary function of peroxisomes in cells?",
+    "options": ["Protein synthesis", "Lipid metabolism and detoxification", "DNA replication", "Photosynthesis"],
+    "answer": 1
+},
+{
+    "question": "Which cell organelle is primarily responsible for maintaining cell shape and structure?",
+    "options": ["Ribosome", "Cytoskeleton", "Nucleolus", "Peroxisome"],
+    "answer": 1
+},
+{
+    "question": "What is the role of histones in the nucleus?",
+    "options": ["Translating mRNA", "Packaging DNA into chromatin", "Producing ATP", "Synthesizing proteins"],
+    "answer": 1
+},
+{
+    "question": "Which transport mechanism requires carrier proteins but no ATP?",
+    "options": ["Active transport", "Facilitated diffusion", "Endocytosis", "Osmosis"],
+    "answer": 1
+},
+{
+    "question": "Which molecule is primarily responsible for forming the cell wall in plants?",
+    "options": ["Chitin", "Cellulose", "Lignin", "Keratin"],
+    "answer": 1
+},
+{
+    "question": "What is the primary purpose of glycoproteins in the cell membrane?",
+    "options": ["Energy storage", "Cell recognition and signaling", "ATP synthesis", "Structural support"],
+    "answer": 1
+},
+{
+    "question": "Which process is responsible for the breakdown of glucose to produce ATP in cells?",
+    "options": ["Photosynthesis", "Glycolysis", "Transcription", "Fermentation"],
+    "answer": 1
+},
+{
+    "question": "Which part of the chloroplast contains chlorophyll?",
+    "options": ["Stroma", "Thylakoid membrane", "Outer membrane", "Inner membrane"],
+    "answer": 1
+},
+{
+    "question": "Which structure regulates the movement of molecules into and out of the nucleus?",
+    "options": ["Nuclear envelope", "Nucleolus", "Nuclear pore", "Chromatin"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is responsible for packaging and modifying proteins for secretion?",
+    "options": ["Endoplasmic reticulum", "Golgi apparatus", "Lysosome", "Nucleus"],
+    "answer": 1
+},
+{
+    "question": "Which process occurs in the mitochondria and generates ATP in the presence of oxygen?",
+    "options": ["Fermentation", "Glycolysis", "Oxidative phosphorylation", "Photosynthesis"],
+    "answer": 2
+},
+{
+    "question": "Which type of cellular transport moves molecules from low to high concentration using ATP?",
+    "options": ["Diffusion", "Facilitated diffusion", "Active transport", "Osmosis"],
+    "answer": 2
+},
+{
+    "question": "What is the function of microfilaments in the cytoskeleton?",
+    "options": ["Provide structural support", "Facilitate intracellular transport", "Assist in cell movement", "Store nutrients"],
+    "answer": 2
+},
+{
+    "question": "Which term describes the engulfing of liquids by a cell?",
+    "options": ["Exocytosis", "Pinocytosis", "Phagocytosis", "Endocytosis"],
+    "answer": 1
+},
+{
+    "question": "Which enzyme is responsible for unwinding DNA during replication?",
+    "options": ["Helicase", "Ligase", "DNA polymerase", "Topoisomerase"],
+    "answer": 0
+},
+{
+    "question": "Which cellular component is involved in intracellular digestion?",
+    "options": ["Lysosomes", "Peroxisomes", "Mitochondria", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "Which type of RNA is responsible for bringing amino acids to the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "siRNA"],
+    "answer": 1
+},
+{
+    "question": "Which type of solution causes a cell to shrink due to water loss?",
+    "options": ["Hypotonic", "Isotonic", "Hypertonic", "Neutral"],
+    "answer": 2
+},
+{
+    "question": "What is the main function of chromatin in the nucleus?",
+    "options": ["ATP production", "Genetic information storage", "Protein synthesis", "Cell signaling"],
+    "answer": 1
+},
+      {
+    "question": "Which organelle is responsible for protein synthesis?",
+    "options": ["Mitochondrion", "Ribosome", "Endoplasmic reticulum", "Lysosome"],
+    "answer": 1
+},
+{
+    "question": "Which molecule is directly involved in energy transfer in cells?",
+    "options": ["ATP", "DNA", "RNA", "Glucose"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the smooth endoplasmic reticulum?",
+    "options": ["Protein synthesis", "Lipid synthesis", "Detoxification", "Both B and C"],
+    "answer": 3
+},
+{
+    "question": "Which structure in plant cells is responsible for photosynthesis?",
+    "options": ["Nucleus", "Mitochondrion", "Chloroplast", "Golgi apparatus"],
+    "answer": 2
+},
+{
+    "question": "What is the function of a centromere?",
+    "options": ["Facilitates cell division", "Holds sister chromatids together", "Produces energy", "Synthesizes proteins"],
+    "answer": 1
+},
+{
+    "question": "What is the main function of the Golgi apparatus?",
+    "options": ["Synthesizing proteins", "Transporting proteins", "Modifying and packaging proteins", "Producing ATP"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is responsible for cellular respiration?",
+    "options": ["Mitochondrion", "Ribosome", "Endoplasmic reticulum", "Lysosome"],
+    "answer": 0
+},
+{
+    "question": "Which process is responsible for the production of RNA from a DNA template?",
+    "options": ["Transcription", "Translation", "Replication", "Mitosis"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the nuclear envelope?",
+    "options": ["Contains the cell's genetic material", "Regulates entry and exit of molecules in the nucleus", "Synthesizes proteins", "Produces energy"],
+    "answer": 1
+},
+{
+    "question": "Which type of cell junction is responsible for preventing leakage of materials between cells?",
+    "options": ["Gap junctions", "Desmosomes", "Tight junctions", "Plasmodesmata"],
+    "answer": 2
+},
+{
+    "question": "Which type of cell division results in two identical daughter cells?",
+    "options": ["Meiosis", "Mitosis", "Binary fission", "Cytokinesis"],
+    "answer": 1
+},
+{
+    "question": "Which molecule serves as the blueprint for protein synthesis?",
+    "options": ["DNA", "mRNA", "tRNA", "Ribosome"],
+    "answer": 0
+},
+{
+    "question": "Which structure within the nucleus is responsible for ribosome production?",
+    "options": ["Nucleolus", "Chromatin", "Nuclear envelope", "Mitochondria"],
+    "answer": 0
+},
+{
+    "question": "What is the main role of actin filaments in the cytoskeleton?",
+    "options": ["Cell shape maintenance", "Cell division", "Intracellular transport", "Cell movement"],
+    "answer": 3
+},
+{
+    "question": "Which structure is responsible for the formation of spindle fibers during cell division?",
+    "options": ["Centriole", "Nucleus", "Plasma membrane", "Rough ER"],
+    "answer": 0
+},
+{
+    "question": "What type of transport mechanism does not require energy and occurs along a concentration gradient?",
+    "options": ["Active transport", "Osmosis", "Facilitated diffusion", "Both B and C"],
+    "answer": 3
+},
+{
+    "question": "What is the main difference between rough and smooth endoplasmic reticulum?",
+    "options": ["Smooth ER has ribosomes; rough ER does not", "Rough ER synthesizes lipids; smooth ER synthesizes proteins", "Rough ER has ribosomes; smooth ER lacks ribosomes", "There is no difference between them"],
+    "answer": 2
+},
+{
+    "question": "Which process is responsible for the division of the cytoplasm in eukaryotic cells?",
+    "options": ["Mitosis", "Cytokinesis", "Meiosis", "Binary fission"],
+    "answer": 1
+},
+{
+    "question": "Which organelle is involved in the breakdown of fatty acids and detoxification?",
+    "options": ["Lysosome", "Mitochondrion", "Peroxisome", "Rough ER"],
+    "answer": 2
+},
+{
+    "question": "Which type of RNA carries genetic information from DNA to the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "siRNA"],
+    "answer": 0
+},
+      {
+    "question": "Which organelle is responsible for the production of ribosomes?",
+    "options": ["Nucleus", "Mitochondrion", "Golgi apparatus", "Nucleolus"],
+    "answer": 3
+},
+{
+    "question": "What is the main function of the cell membrane?",
+    "options": ["To provide structure", "To regulate what enters and exits the cell", "To store genetic material", "To produce energy"],
+    "answer": 1
+},
+{
+    "question": "Which structure is responsible for storing genetic information in the cell?",
+    "options": ["Nucleus", "Mitochondrion", "Ribosome", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "Which type of cell is responsible for oxygen transport in the human body?",
+    "options": ["Red blood cell", "White blood cell", "Platelet", "Neuron"],
+    "answer": 0
+},
+{
+    "question": "Which organelle is involved in protein modification and packaging?",
+    "options": ["Lysosome", "Golgi apparatus", "Rough ER", "Smooth ER"],
+    "answer": 1
+},
+{
+    "question": "What is the primary function of lysosomes in a cell?",
+    "options": ["Protein synthesis", "Cellular digestion", "Energy production", "Cell division"],
+    "answer": 1
+},
+{
+    "question": "What is the role of the mitochondria in a cell?",
+    "options": ["Protein synthesis", "Energy production", "Transport of materials", "Cell division"],
+    "answer": 1
+},
+{
+    "question": "Which part of the cell is responsible for controlling what enters and exits?",
+    "options": ["Nucleus", "Ribosome", "Cell membrane", "Mitochondrion"],
+    "answer": 2
+},
+{
+    "question": "Which of the following is responsible for protein synthesis?",
+    "options": ["Nucleus", "Mitochondrion", "Ribosome", "Golgi apparatus"],
+    "answer": 2
+},
+{
+    "question": "What is the fluid inside the cell, where all organelles are suspended, called?",
+    "options": ["Cytoplasm", "Nucleus", "Mitochondria", "Endoplasmic reticulum"],
+    "answer": 0
+},
+{
+    "question": "What type of cell junction allows communication between adjacent cells?",
+    "options": ["Tight junctions", "Gap junctions", "Desmosomes", "Plasmodesmata"],
+    "answer": 1
+},
+{
+    "question": "Which structure helps cells maintain their shape and structure?",
+    "options": ["Nucleus", "Cytoskeleton", "Mitochondrion", "Cell membrane"],
+    "answer": 1
+},
+{
+    "question": "What process involves the movement of substances against their concentration gradient, requiring energy?",
+    "options": ["Active transport", "Facilitated diffusion", "Osmosis", "Passive diffusion"],
+    "answer": 0
+},
+{
+    "question": "Which phase of the cell cycle is responsible for DNA replication?",
+    "options": ["Prophase", "Metaphase", "S phase", "G2 phase"],
+    "answer": 2
+},
+{
+    "question": "In which type of cell would you find a large central vacuole?",
+    "options": ["Animal cell", "Plant cell", "Bacterial cell", "Fungal cell"],
+    "answer": 1
+},
+{
+    "question": "Which type of RNA is involved in protein synthesis by transferring amino acids to the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "siRNA"],
+    "answer": 1
+},
+{
+    "question": "Which process results in the formation of two identical daughter cells?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Cytokinesis"],
+    "answer": 0
+},
+{
+    "question": "What is the purpose of the smooth endoplasmic reticulum?",
+    "options": ["Lipid synthesis", "Protein synthesis", "Cell signaling", "Detoxification"],
+    "answer": 0
+},
+{
+    "question": "What structure in the cell is responsible for breaking down waste materials?",
+    "options": ["Peroxisomes", "Lysosomes", "Mitochondria", "Nucleus"],
+    "answer": 1
+},
+{
+    "question": "What is the outer layer of the plant cell called?",
+    "options": ["Cell membrane", "Nucleus", "Cell wall", "Plasma membrane"],
+    "answer": 2
+},
+      {
+    "question": "Which organelle is known as the powerhouse of the cell?",
+    "options": ["Nucleus", "Mitochondrion", "Ribosome", "Golgi apparatus"],
+    "answer": 1
+},
+{
+    "question": "What is the primary function of the nucleolus?",
+    "options": ["DNA storage", "Ribosome production", "Protein synthesis", "Cell division"],
+    "answer": 1
+},
+{
+    "question": "What is the term for the process of cells taking in material by engulfing it?",
+    "options": ["Endocytosis", "Exocytosis", "Pinocytosis", "Phagocytosis"],
+    "answer": 0
+},
+{
+    "question": "Which type of RNA carries the genetic information from the DNA to the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+    "answer": 0
+},
+{
+    "question": "What is the main function of ribosomes in the cell?",
+    "options": ["Energy production", "Protein synthesis", "DNA replication", "Cell division"],
+    "answer": 1
+},
+{
+    "question": "What is the term for the network of proteins that maintains cell shape and helps with movement?",
+    "options": ["Cytoskeleton", "Endoplasmic reticulum", "Plasma membrane", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "Which organelle is involved in the synthesis of lipids and detoxification?",
+    "options": ["Smooth endoplasmic reticulum", "Rough endoplasmic reticulum", "Golgi apparatus", "Lysosome"],
+    "answer": 0
+},
+{
+    "question": "What type of transport does not require energy to move molecules across the cell membrane?",
+    "options": ["Active transport", "Passive diffusion", "Endocytosis", "Exocytosis"],
+    "answer": 1
+},
+{
+    "question": "Which structure is responsible for cellular respiration in eukaryotic cells?",
+    "options": ["Mitochondrion", "Nucleus", "Ribosome", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "What is the role of chloroplasts in plant cells?",
+    "options": ["Energy production", "Photosynthesis", "Protein synthesis", "Transport of materials"],
+    "answer": 1
+},
+{
+    "question": "What is the liquid portion inside the cell that surrounds the organelles?",
+    "options": ["Cytoplasm", "Nucleoplasm", "Plasma membrane", "Endoplasm"],
+    "answer": 0
+},
+{
+    "question": "What process allows cells to expel substances by vesicle fusion with the plasma membrane?",
+    "options": ["Exocytosis", "Endocytosis", "Phagocytosis", "Pinocytosis"],
+    "answer": 0
+},
+{
+    "question": "In which phase of mitosis do the chromosomes align at the center of the cell?",
+    "options": ["Anaphase", "Metaphase", "Prophase", "Telophase"],
+    "answer": 1
+},
+{
+    "question": "What is the role of the cell wall in plant cells?",
+    "options": ["Regulating movement of substances", "Providing structural support", "Synthesizing proteins", "Storing genetic information"],
+    "answer": 1
+},
+{
+    "question": "Which part of the cell is responsible for organizing microtubules?",
+    "options": ["Centriole", "Golgi apparatus", "Mitochondrion", "Endoplasmic reticulum"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the rough endoplasmic reticulum?",
+    "options": ["Lipid synthesis", "Protein synthesis", "Cell signaling", "Detoxification"],
+    "answer": 1
+},
+{
+    "question": "Which molecule carries amino acids to the ribosome during protein synthesis?",
+    "options": ["mRNA", "tRNA", "rRNA", "DNA"],
+    "answer": 1
+},
+{
+    "question": "What is the structure found in plant cells but not in animal cells?",
+    "options": ["Chloroplast", "Mitochondrion", "Ribosome", "Nucleus"],
+    "answer": 0
+},
+{
+    "question": "Which part of the cell is responsible for modifying and packaging proteins?",
+    "options": ["Golgi apparatus", "Endoplasmic reticulum", "Lysosomes", "Nucleus"],
+    "answer": 0
+},
+{
+    "question": "What process occurs when a cell divides to produce four non-identical daughter cells with half the number of chromosomes?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Budding"],
+    "answer": 1
+}
+  ],
+            "genetics": [
+    {
+      "question": "What is the process of copying DNA called?",
+      "options": ["Translation", "Transcription", "Replication", "Mutation"],
+      "answer": 2
+    },
+    {
+      "question": "Which molecule carries genetic information from DNA to ribosomes?",
+      "options": ["tRNA", "mRNA", "rRNA", "DNA polymerase"],
+      "answer": 1
+    },
+    {
+      "question": "What is a gene?",
+      "options": ["A type of protein", "A segment of DNA that codes for a protein", "A type of chromosome", "A cellular organelle"],
+      "answer": 1
+    },
+    {
+      "question": "Which genetic disorder is caused by an extra copy of chromosome 21?",
+      "options": ["Cystic fibrosis", "Huntington's disease", "Down syndrome", "Sickle cell anemia"],
+      "answer": 2
+    },
+    {
+      "question": "What is the technique used to amplify DNA sequences?",
+      "options": ["Gel electrophoresis", "PCR", "DNA sequencing", "CRISPR"],
+      "answer": 1
+    },
+      {
+    "question": "What is the basic unit of heredity?",
+    "options": ["Gene", "Chromosome", "DNA", "Cell"],
+    "answer": 0
+},
+{
+    "question": "Which of the following represents the process by which a gene is copied to produce RNA?",
+    "options": ["Transcription", "Replication", "Translation", "Mutation"],
+    "answer": 0
+},
+{
+    "question": "What type of bond holds the two strands of DNA together?",
+    "options": ["Ionic bond", "Hydrogen bond", "Covalent bond", "Peptide bond"],
+    "answer": 1
+},
+{
+    "question": "Which part of the DNA molecule carries the genetic instructions for building proteins?",
+    "options": ["Exons", "Introns", "Codons", "Anticodons"],
+    "answer": 2
+},
+{
+    "question": "What is the genetic material found in the nucleus of eukaryotic cells?",
+    "options": ["Mitochondrial DNA", "Chromosomes", "Plasmids", "Ribosomes"],
+    "answer": 1
+},
+{
+    "question": "What is the term for the exchange of genetic material between homologous chromosomes during meiosis?",
+    "options": ["Crossing over", "Replication", "Mutation", "Independent assortment"],
+    "answer": 0
+},
+{
+    "question": "Which type of RNA is responsible for carrying the amino acids to the ribosome during protein synthesis?",
+    "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+    "answer": 1
+},
+{
+    "question": "In a DNA sequence, what does the 'A' base pair with?",
+    "options": ["T", "G", "C", "U"],
+    "answer": 0
+},
+{
+    "question": "What is the role of the ribosome in protein synthesis?",
+    "options": ["Transcribe DNA", "Translate mRNA into protein", "Synthesize RNA", "Replicate DNA"],
+    "answer": 1
+},
+{
+    "question": "What is the term for an organism's observable traits?",
+    "options": ["Genotype", "Phenotype", "Alleles", "Gene pool"],
+    "answer": 1
+},
+{
+    "question": "What is the genetic makeup of an organism referred to as?",
+    "options": ["Phenotype", "Alleles", "Genotype", "Karyotype"],
+    "answer": 2
+},
+{
+    "question": "Which of the following is an example of a dominant allele?",
+    "options": ["A", "a", "AA", "aa"],
+    "answer": 0
+},
+{
+    "question": "What is the process of creating genetically identical organisms through asexual reproduction called?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Cloning"],
+    "answer": 3
+},
+{
+    "question": "What is the process by which mRNA is translated into a protein?",
+    "options": ["Replication", "Transcription", "Translation", "Mutagenesis"],
+    "answer": 2
+},
+{
+    "question": "Which scientist is credited with the discovery of the laws of inheritance through pea plant experiments?",
+    "options": ["Charles Darwin", "Gregory Mendel", "James Watson", "Francis Crick"],
+    "answer": 1
+},
+{
+    "question": "Which of the following mutations involves a change in a single nucleotide?",
+    "options": ["Point mutation", "Frameshift mutation", "Chromosomal inversion", "Gene duplication"],
+    "answer": 0
+},
+{
+    "question": "What term describes different forms of the same gene?",
+    "options": ["Alleles", "Codons", "Nucleotides", "Chromosomes"],
+    "answer": 0
+},
+{
+    "question": "What is the outcome of mitosis?",
+    "options": ["Two genetically identical cells", "Four genetically diverse cells", "One genetically identical cell", "Two genetically diverse cells"],
+    "answer": 0
+},
+{
+    "question": "What is the term for a change in the DNA sequence that can lead to genetic variation?",
+    "options": ["Mutation", "Replication", "Crossing over", "Exon skipping"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is a method used to separate and analyze DNA fragments?",
+    "options": ["Polymerase chain reaction", "Gel electrophoresis", "Southern blotting", "RNA sequencing"],
+    "answer": 1
+},
+      {
+    "question": "Which of the following describes the function of a promoter in a gene?",
+    "options": ["It catalyzes protein synthesis", "It binds RNA polymerase for transcription initiation", "It edits RNA", "It synthesizes DNA"],
+    "answer": 1
+},
+{
+    "question": "What is the term for the three-letter codons in mRNA that specify a particular amino acid?",
+    "options": ["Exons", "Codons", "Anticodons", "Introns"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is responsible for the production of ribosomes?",
+    "options": ["Endoplasmic reticulum", "Mitochondria", "Nucleolus", "Golgi apparatus"],
+    "answer": 2
+},
+{
+    "question": "In which phase of mitosis do the chromosomes line up at the cell's equator?",
+    "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "answer": 1
+},
+{
+    "question": "What is the term for a chromosomal abnormality where part of a chromosome is reversed?",
+    "options": ["Translocation", "Duplication", "Inversion", "Deletion"],
+    "answer": 2
+},
+{
+    "question": "Which of the following is a key difference between meiosis and mitosis?",
+    "options": ["Mitosis produces two haploid cells, meiosis produces four diploid cells", "Meiosis involves crossing over, mitosis does not", "Mitosis occurs only in gametes, meiosis occurs in somatic cells", "Mitosis produces four cells, meiosis produces two"],
+    "answer": 1
+},
+{
+    "question": "What is the function of DNA ligase during DNA replication?",
+    "options": ["It unzips the double helix", "It adds RNA primers", "It joins Okazaki fragments", "It synthesizes new strands of DNA"],
+    "answer": 2
+},
+{
+    "question": "What is the term for the process where an RNA molecule is synthesized from a DNA template?",
+    "options": ["Translation", "Replication", "Transcription", "Duplication"],
+    "answer": 2
+},
+{
+    "question": "What is a genotype?",
+    "options": ["The physical appearance of an organism", "The genetic composition of an organism", "The number of chromosomes in an organism", "The behavior of an organism's genes"],
+    "answer": 1
+},
+{
+    "question": "Which of the following processes results in the formation of four non-identical daughter cells?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Cloning"],
+    "answer": 1
+},
+{
+    "question": "What is the role of the Golgi apparatus in a cell?",
+    "options": ["To generate energy", "To synthesize proteins", "To modify and package proteins", "To break down waste"],
+    "answer": 2
+},
+{
+    "question": "What type of bond holds the base pairs together in a DNA molecule?",
+    "options": ["Ionic bond", "Hydrogen bond", "Covalent bond", "Peptide bond"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is responsible for carrying genetic information from DNA to the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+    "answer": 0
+},
+{
+    "question": "What is the term for the collection of all genetic material in an organism?",
+    "options": ["Genotype", "Genome", "Alleles", "Karyotype"],
+    "answer": 1
+},
+{
+    "question": "What type of mutation involves a change in a single base pair of DNA?",
+    "options": ["Point mutation", "Frame-shift mutation", "Chromosomal inversion", "Translocation"],
+    "answer": 0
+},
+{
+    "question": "Which process results in the formation of two genetically identical daughter cells?",
+    "options": ["Mitosis", "Meiosis", "Crossing over", "Recombination"],
+    "answer": 0
+},
+{
+    "question": "What is the function of tRNA in protein synthesis?",
+    "options": ["To carry amino acids to the ribosome", "To synthesize proteins", "To replicate DNA", "To transcribe mRNA"],
+    "answer": 0
+},
+{
+    "question": "What is the term for a gene's specific location on a chromosome?",
+    "options": ["Allele", "Locus", "Phenotype", "Genotype"],
+    "answer": 1
+},
+{
+    "question": "What is the role of the centrosome during cell division?",
+    "options": ["To synthesize RNA", "To regulate gene expression", "To organize microtubules and help form the spindle", "To break down waste materials"],
+    "answer": 2
+},
+{
+    "question": "What is the outcome of crossing over during meiosis?",
+    "options": ["Genetic recombination", "Chromosomal mutations", "Gene duplication", "Formation of identical chromosomes"],
+    "answer": 0
+},
+      {
+    "question": "Which molecule is responsible for carrying genetic information from DNA to the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "DNA"],
+    "answer": 0
+},
+{
+    "question": "What is the term for the process by which mRNA is decoded into a protein?",
+    "options": ["Transcription", "Translation", "Replication", "Mutagenesis"],
+    "answer": 1
+},
+{
+    "question": "Which structure is responsible for the production of ribosomes?",
+    "options": ["Nucleolus", "Nucleus", "Mitochondria", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "What is the term for the complete set of chromosomes in a cell?",
+    "options": ["Genome", "Genotype", "Chromatid", "Karyotype"],
+    "answer": 3
+},
+{
+    "question": "Which of the following is the correct sequence of events in cell division?",
+    "options": ["Interphase, Prophase, Metaphase, Anaphase, Telophase", "Prophase, Metaphase, Telophase, Anaphase, Interphase", "Metaphase, Prophase, Telophase, Anaphase, Interphase", "Telophase, Anaphase, Metaphase, Prophase, Interphase"],
+    "answer": 0
+},
+{
+    "question": "Which type of RNA carries the instructions for protein synthesis from the nucleus to the ribosomes?",
+    "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+    "answer": 0
+},
+{
+    "question": "Which term refers to the physical location of a gene on a chromosome?",
+    "options": ["Allele", "Locus", "Gene pool", "Genome"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is NOT a component of the cell membrane?",
+    "options": ["Phospholipids", "Proteins", "Cholesterol", "Ribosomes"],
+    "answer": 3
+},
+{
+    "question": "Which phase of the cell cycle involves cell division?",
+    "options": ["Interphase", "Prophase", "Mitosis", "Cytokinesis"],
+    "answer": 2
+},
+{
+    "question": "What is the term for the process by which a cell engulfs material from outside the cell?",
+    "options": ["Phagocytosis", "Exocytosis", "Endocytosis", "Pinocytosis"],
+    "answer": 2
+},
+{
+    "question": "What type of bond holds the two strands of a DNA molecule together?",
+    "options": ["Ionic bond", "Hydrogen bond", "Covalent bond", "Peptide bond"],
+    "answer": 1
+},
+{
+    "question": "Which of the following processes is responsible for the exchange of genetic material between homologous chromosomes during meiosis?",
+    "options": ["Crossing over", "Transcription", "Replication", "Translation"],
+    "answer": 0
+},
+{
+    "question": "Which organelle is known as the powerhouse of the cell?",
+    "options": ["Mitochondria", "Nucleus", "Endoplasmic reticulum", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is an example of a phenotype?",
+    "options": ["Genetic makeup", "Eye color", "Genetic mutation", "Chromosome count"],
+    "answer": 1
+},
+{
+    "question": "What is the role of the spliceosome in gene expression?",
+    "options": ["To edit mRNA", "To bind to DNA", "To synthesize proteins", "To replicate DNA"],
+    "answer": 0
+},
+{
+    "question": "What is the main difference between DNA and RNA?",
+    "options": ["DNA contains ribose; RNA contains deoxyribose", "DNA contains uracil; RNA contains thymine", "DNA is double-stranded; RNA is single-stranded", "DNA is made of amino acids; RNA is made of nucleotides"],
+    "answer": 2
+},
+{
+    "question": "What is the process by which a single-stranded RNA molecule is synthesized from a DNA template?",
+    "options": ["Transcription", "Replication", "Translation", "Mutagenesis"],
+    "answer": 0
+},
+{
+    "question": "In which part of the cell does translation occur?",
+    "options": ["Nucleus", "Ribosome", "Cytoplasm", "Mitochondria"],
+    "answer": 1
+},
+{
+    "question": "What is the term for the exchange of genetic material between two chromosomes during meiosis?",
+    "options": ["Replication", "Crossing over", "Gene expression", "Mutagenesis"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is the correct base-pairing rule in DNA?",
+    "options": ["Adenine pairs with thymine; cytosine pairs with guanine", "Adenine pairs with guanine; cytosine pairs with thymine", "Adenine pairs with uracil; cytosine pairs with guanine", "Adenine pairs with thymine; cytosine pairs with adenine"],
+    "answer": 0
+},
+      {
+    "question": "Which of the following best describes an allele?",
+    "options": ["A variant form of a gene", "A type of protein", "A form of RNA", "A type of chromosome"],
+    "answer": 0
+},
+{
+    "question": "What is the function of DNA polymerase during DNA replication?",
+    "options": ["It unwinds the DNA", "It adds new nucleotides to the growing strand", "It seals the gaps between Okazaki fragments", "It repairs damaged DNA"],
+    "answer": 1
+},
+{
+    "question": "What is the main difference between mitosis and meiosis?",
+    "options": ["Mitosis results in four daughter cells, meiosis in two", "Mitosis is used for growth, meiosis for reproduction", "Mitosis occurs only in gametes, meiosis in somatic cells", "Mitosis results in genetic variation, meiosis does not"],
+    "answer": 1
+},
+{
+    "question": "What is the structure of RNA that carries amino acids during translation?",
+    "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+    "answer": 1
+},
+{
+    "question": "Which type of RNA is involved in forming the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+    "answer": 2
+},
+{
+    "question": "Which type of mutation results in the insertion of one or more nucleotides into the DNA sequence?",
+    "options": ["Frameshift mutation", "Point mutation", "Silent mutation", "Missense mutation"],
+    "answer": 0
+},
+{
+    "question": "Which process results in the formation of gametes?",
+    "options": ["Mitosis", "Meiosis", "Fertilization", "Transcription"],
+    "answer": 1
+},
+{
+    "question": "What is the term for a segment of DNA that codes for a protein?",
+    "options": ["Gene", "Exon", "Codon", "Intron"],
+    "answer": 0
+},
+{
+    "question": "Which process is responsible for the conversion of mRNA into a functional protein?",
+    "options": ["Transcription", "Translation", "Replication", "Crossing over"],
+    "answer": 1
+},
+{
+    "question": "What is a genetic mutation that does not change the amino acid sequence of a protein called?",
+    "options": ["Silent mutation", "Missense mutation", "Nonsense mutation", "Frameshift mutation"],
+    "answer": 0
+},
+{
+    "question": "Which of the following best describes a recessive allele?",
+    "options": ["It is expressed only when both alleles are recessive", "It is always expressed in the phenotype", "It is dominant over all other alleles", "It is never expressed in the phenotype"],
+    "answer": 0
+},
+{
+    "question": "Which organelle is responsible for protein synthesis?",
+    "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
+    "answer": 2
+},
+{
+    "question": "Which type of inheritance pattern involves both alleles contributing to the phenotype?",
+    "options": ["Codominance", "Incomplete dominance", "Complete dominance", "Polygenic inheritance"],
+    "answer": 0
+},
+{
+    "question": "What is the process by which a cell divides to produce two identical daughter cells?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Conjugation"],
+    "answer": 0
+},
+{
+    "question": "What is the role of helicase in DNA replication?",
+    "options": ["To add nucleotides to the new strand", "To unwind the double helix", "To proofread the new strand", "To seal the DNA strands together"],
+    "answer": 1
+},
+{
+    "question": "Which term refers to a set of three nucleotides that codes for a specific amino acid?",
+    "options": ["Codon", "Anticodon", "Exon", "Intron"],
+    "answer": 0
+},
+{
+    "question": "What is the term for the physical appearance of an organism resulting from its genotype?",
+    "options": ["Phenotype", "Genotype", "Chromotype", "Haplotyping"],
+    "answer": 0
+},
+{
+    "question": "Which of the following processes occurs in the cytoplasm of a cell?",
+    "options": ["DNA replication", "Transcription", "Translation", "RNA splicing"],
+    "answer": 2
+},
+{
+    "question": "Which structure is responsible for separating sister chromatids during mitosis?",
+    "options": ["Spindle fibers", "Centrosome", "Nuclear membrane", "Chromosome"],
+    "answer": 0
+},
+      {
+    "question": "Which of the following is the correct sequence of events in protein synthesis?",
+    "options": ["Replication, Transcription, Translation", "Transcription, Translation, Replication", "Transcription, Replication, Translation", "Translation, Transcription, Replication"],
+    "answer": 0
+},
+{
+    "question": "What is the structure of DNA?",
+    "options": ["Single-stranded helix", "Double-stranded helix", "Triple-stranded helix", "Circular strand"],
+    "answer": 1
+},
+{
+    "question": "Which type of cell division results in four non-identical daughter cells?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Cloning"],
+    "answer": 1
+},
+{
+    "question": "What is the name of the process by which a single-stranded mRNA is synthesized from a DNA template?",
+    "options": ["Replication", "Translation", "Transcription", "Transposition"],
+    "answer": 2
+},
+{
+    "question": "In which phase of meiosis does crossing over occur?",
+    "options": ["Prophase I", "Metaphase I", "Anaphase II", "Telophase II"],
+    "answer": 0
+},
+{
+    "question": "What is the term for a heritable change in the genetic material?",
+    "options": ["Mutation", "Recombination", "Translation", "Transcription"],
+    "answer": 0
+},
+{
+    "question": "Which type of RNA carries the genetic instructions from DNA to the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+    "answer": 0
+},
+{
+    "question": "Which of the following represents the structure of a nucleotide?",
+    "options": ["Sugar, phosphate group, nitrogenous base", "Sugar, amino acid, phosphate group", "Phosphate group, nitrogenous base, amino acid", "Sugar, nitrogenous base, protein"],
+    "answer": 0
+},
+{
+    "question": "What does the term 'genotype' refer to?",
+    "options": ["The physical characteristics of an organism", "The genetic makeup of an organism", "The environment of an organism", "The number of chromosomes in an organism"],
+    "answer": 1
+},
+{
+    "question": "Which of the following best describes a dominant allele?",
+    "options": ["It is always expressed in the phenotype", "It is only expressed when paired with another dominant allele", "It is masked by a recessive allele", "It has no impact on the phenotype"],
+    "answer": 0
+},
+{
+    "question": "What does the central dogma of molecular biology state?",
+    "options": ["DNA -> RNA -> Protein", "RNA -> DNA -> Protein", "Protein -> RNA -> DNA", "DNA -> Protein -> RNA"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is true about the process of DNA replication?",
+    "options": ["It occurs during the G1 phase of the cell cycle", "It results in the formation of four daughter molecules", "It is semiconservative", "It occurs only in gametes"],
+    "answer": 2
+},
+{
+    "question": "In which part of the cell does transcription occur?",
+    "options": ["Nucleus", "Cytoplasm", "Mitochondria", "Rough ER"],
+    "answer": 0
+},
+{
+    "question": "Which molecule carries the amino acids to the ribosome during protein synthesis?",
+    "options": ["mRNA", "tRNA", "rRNA", "DNA"],
+    "answer": 1
+},
+{
+    "question": "Which type of mutation results in the replacement of one amino acid with another in a protein?",
+    "options": ["Point mutation", "Silent mutation", "Missense mutation", "Frameshift mutation"],
+    "answer": 2
+},
+{
+    "question": "What does the term 'phenotype' refer to?",
+    "options": ["The genetic makeup of an organism", "The observable characteristics of an organism", "The number of chromosomes in an organism", "The environment of an organism"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is true about the genetic code?",
+    "options": ["It is universal", "It is unique to each species", "It does not involve codons", "It is always read in reverse order"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of ribosomes?",
+    "options": ["DNA replication", "Protein synthesis", "Energy production", "Cell division"],
+    "answer": 1
+},
+{
+    "question": "What is the name of the enzyme responsible for unwinding the DNA double helix during replication?",
+    "options": ["Helicase", "Ligase", "Polymerase", "Topoisomerase"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of transfer RNA (tRNA)?",
+    "options": ["To carry amino acids to the ribosome", "To synthesize mRNA", "To form the ribosome", "To replicate DNA"],
+    "answer": 0
+},
+      {
+    "question": "What is the main purpose of meiosis?",
+    "options": ["To produce genetically identical cells", "To produce gametes", "To repair damaged DNA", "To maintain genetic stability"],
+    "answer": 1
+},
+{
+    "question": "Which of the following are components of the cell membrane?",
+    "options": ["Phospholipids, proteins, and carbohydrates", "Carbohydrates and DNA", "Lipids and DNA", "Proteins, DNA, and RNA"],
+    "answer": 0
+},
+{
+    "question": "In the process of translation, what does tRNA bring to the ribosome?",
+    "options": ["DNA", "Amino acids", "mRNA", "Ribosomes"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is responsible for carrying genetic information from the nucleus to the ribosome?",
+    "options": ["mRNA", "rRNA", "tRNA", "DNA"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the Golgi apparatus in a cell?",
+    "options": ["Protein synthesis", "Modification and packaging of proteins", "Lipid synthesis", "ATP production"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is true about stem cells?",
+    "options": ["They can only form one type of cell", "They can divide into many cell types", "They are fully differentiated", "They do not have the ability to divide"],
+    "answer": 1
+},
+{
+    "question": "What process occurs in the mitochondria of a cell?",
+    "options": ["Photosynthesis", "Cell division", "ATP production", "Protein synthesis"],
+    "answer": 2
+},
+{
+    "question": "Which of the following is an example of a recessive genetic disorder?",
+    "options": ["Cystic fibrosis", "Huntington's disease", "Down syndrome", "Sickle cell anemia"],
+    "answer": 0
+},
+{
+    "question": "During which phase of the cell cycle does DNA replication occur?",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "answer": 1
+},
+{
+    "question": "Which structure is responsible for producing ribosomes in the cell?",
+    "options": ["Nucleolus", "Nucleus", "Mitochondria", "Endoplasmic reticulum"],
+    "answer": 0
+},
+{
+    "question": "What is the main difference between prokaryotic and eukaryotic cells?",
+    "options": ["Eukaryotic cells have a nucleus, prokaryotic cells do not", "Prokaryotic cells have a nucleus, eukaryotic cells do not", "Eukaryotic cells have ribosomes, prokaryotic cells do not", "Prokaryotic cells are larger than eukaryotic cells"],
+    "answer": 0
+},
+{
+    "question": "What is the role of the enzyme DNA polymerase?",
+    "options": ["To unwind the DNA double helix", "To build the complementary DNA strand", "To repair DNA", "To create RNA from DNA"],
+    "answer": 1
+},
+{
+    "question": "Which organelle is involved in the synthesis of proteins?",
+    "options": ["Nucleus", "Ribosomes", "Mitochondria", "Golgi apparatus"],
+    "answer": 1
+},
+{
+    "question": "Which of the following are the building blocks of proteins?",
+    "options": ["Nucleotides", "Amino acids", "Fatty acids", "Monosaccharides"],
+    "answer": 1
+},
+{
+    "question": "Which molecule is responsible for carrying amino acids to the ribosome during translation?",
+    "options": ["mRNA", "tRNA", "rRNA", "DNA"],
+    "answer": 1
+},
+{
+    "question": "What process is responsible for the production of gametes?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Cloning"],
+    "answer": 1
+},
+{
+    "question": "Which of the following occurs during prophase of mitosis?",
+    "options": ["The nuclear membrane dissolves", "Chromosomes align at the center of the cell", "The cytoplasm divides", "Chromatids separate"],
+    "answer": 0
+},
+{
+    "question": "Which type of mutation involves the addition or loss of one or more nucleotides?",
+    "options": ["Silent mutation", "Point mutation", "Frameshift mutation", "Missense mutation"],
+    "answer": 2
+},
+{
+    "question": "What is the name of the process by which cells break down glucose for energy?",
+    "options": ["Photosynthesis", "Fermentation", "Cellular respiration", "Protein synthesis"],
+    "answer": 2
+},
+      {
+    "question": "What is the primary function of the rough endoplasmic reticulum?",
+    "options": ["Lipid synthesis", "Protein synthesis", "Energy production", "DNA replication"],
+    "answer": 1
+},
+{
+    "question": "Which process allows the movement of large molecules across the cell membrane using vesicles?",
+    "options": ["Diffusion", "Active transport", "Endocytosis", "Facilitated diffusion"],
+    "answer": 2
+},
+{
+    "question": "What is the role of the centrioles during cell division?",
+    "options": ["To replicate DNA", "To form the spindle apparatus", "To produce ribosomes", "To control the cell cycle"],
+    "answer": 1
+},
+{
+    "question": "What is the name of the structure that separates the contents of the cell from the external environment?",
+    "options": ["Nucleus", "Cell membrane", "Cytoplasm", "Endoplasmic reticulum"],
+    "answer": 1
+},
+{
+    "question": "What is the name of the process by which a cell divides its nucleus into two identical nuclei?",
+    "options": ["Cytokinesis", "Mitosis", "Meiosis", "Binary fission"],
+    "answer": 1
+},
+{
+    "question": "What are the two main stages of the cell cycle?",
+    "options": ["Interphase and M phase", "G1 phase and S phase", "M phase and G2 phase", "Cytokinesis and Telophase"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is true regarding the function of ribosomes?",
+    "options": ["They synthesize proteins", "They store genetic information", "They produce energy", "They are involved in cell division"],
+    "answer": 0
+},
+{
+    "question": "In which type of cell would you find chloroplasts?",
+    "options": ["Animal cells", "Plant cells", "Bacterial cells", "Fungal cells"],
+    "answer": 1
+},
+{
+    "question": "What is the key feature of a prokaryotic cell?",
+    "options": ["It has a membrane-bound nucleus", "It lacks a membrane-bound nucleus", "It has mitochondria", "It has ribosomes but no cell wall"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is the function of the smooth endoplasmic reticulum?",
+    "options": ["Lipid and steroid hormone synthesis", "Protein synthesis", "Modification of proteins", "Storage of calcium"],
+    "answer": 0
+},
+{
+    "question": "What is the genetic material found in the mitochondria?",
+    "options": ["mRNA", "tRNA", "DNA", "Protein"],
+    "answer": 2
+},
+{
+    "question": "Which of the following are the building blocks of DNA?",
+    "options": ["Amino acids", "Nucleotides", "Monosaccharides", "Fatty acids"],
+    "answer": 1
+},
+{
+    "question": "Which of the following processes occurs in the nucleus of eukaryotic cells?",
+    "options": ["Transcription", "Translation", "Cell division", "ATP production"],
+    "answer": 0
+},
+{
+    "question": "During which phase of meiosis does genetic recombination occur?",
+    "options": ["Prophase I", "Metaphase II", "Anaphase I", "Telophase II"],
+    "answer": 0
+},
+{
+    "question": "Which structure plays a key role in the synthesis of proteins in the cytoplasm?",
+    "options": ["Nucleus", "Ribosomes", "Mitochondria", "Golgi apparatus"],
+    "answer": 1
+},
+{
+    "question": "What is the result of crossing over during meiosis?",
+    "options": ["Two identical cells", "Variation in genetic material", "Reproduction of chromosomes", "Halving of chromosome number"],
+    "answer": 1
+},
+{
+    "question": "What type of mutation occurs when a single nucleotide is changed to another?",
+    "options": ["Silent mutation", "Missense mutation", "Nonsense mutation", "Frameshift mutation"],
+    "answer": 1
+},
+{
+    "question": "What is the main function of the cytoskeleton?",
+    "options": ["To protect the cell", "To aid in protein synthesis", "To maintain the cell shape", "To store genetic material"],
+    "answer": 2
+},
+{
+    "question": "Which organelle is responsible for the detoxification of harmful substances in the cell?",
+    "options": ["Lysosome", "Endoplasmic reticulum", "Peroxisome", "Mitochondrion"],
+    "answer": 2
+},
+{
+    "question": "Which of the following best describes a karyotype?",
+    "options": ["A map of the genome", "A diagram showing all chromosomes in a cell", "A type of RNA", "A protein synthesis process"],
+    "answer": 1
+},
+      {
+    "question": "Which part of the cell is responsible for packaging and modifying proteins?",
+    "options": ["Mitochondria", "Golgi apparatus", "Lysosome", "Nucleus"],
+    "answer": 1
+},
+{
+    "question": "What is the primary function of the cell membrane?",
+    "options": ["Energy production", "Protein synthesis", "Regulating what enters and exits the cell", "DNA storage"],
+    "answer": 2
+},
+{
+    "question": "What happens during anaphase in mitosis?",
+    "options": ["Chromosomes are duplicated", "Chromosomes are pulled apart", "Nucleolus disappears", "Cytoplasm divides"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is NOT a component of the cytoskeleton?",
+    "options": ["Microtubules", "Intermediate filaments", "Actin filaments", "Ribosomes"],
+    "answer": 3
+},
+{
+    "question": "In which phase of the cell cycle do cells prepare for division?",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "answer": 2
+},
+{
+    "question": "Which of the following structures is responsible for controlling the activities of the cell?",
+    "options": ["Cell membrane", "Nucleus", "Mitochondria", "Endoplasmic reticulum"],
+    "answer": 1
+},
+{
+    "question": "What is the term for a pair of chromosomes that are similar in shape and size?",
+    "options": ["Homologous chromosomes", "Sister chromatids", "Centromeres", "Haploid chromosomes"],
+    "answer": 0
+},
+{
+    "question": "What is the main role of mitochondria in the cell?",
+    "options": ["Energy production", "Protein synthesis", "Cell division", "DNA replication"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the ribosomes?",
+    "options": ["Protein synthesis", "Energy production", "DNA storage", "Cell movement"],
+    "answer": 0
+},
+{
+    "question": "During which stage of mitosis do the chromosomes align at the cell's equator?",
+    "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "answer": 1
+},
+{
+    "question": "Which type of cell has no nucleus?",
+    "options": ["Prokaryotic cells", "Eukaryotic cells", "Animal cells", "Plant cells"],
+    "answer": 0
+},
+{
+    "question": "Which of the following processes occurs during the G1 phase of the cell cycle?",
+    "options": ["DNA replication", "Cell growth", "Chromosome separation", "Mitosis"],
+    "answer": 1
+},
+{
+    "question": "What is the main function of the lysosomes in a cell?",
+    "options": ["Protein synthesis", "Breaking down waste materials", "Storing nutrients", "Generating energy"],
+    "answer": 1
+},
+{
+    "question": "Which of the following is a characteristic of eukaryotic cells?",
+    "options": ["No nucleus", "Lack of organelles", "Contain a nucleus", "Unicellular only"],
+    "answer": 2
+},
+{
+    "question": "What is the role of chloroplasts in plant cells?",
+    "options": ["Energy production", "Protein synthesis", "Photosynthesis", "DNA replication"],
+    "answer": 2
+},
+{
+    "question": "Which of the following stages of meiosis results in the formation of four haploid cells?",
+    "options": ["Prophase I", "Metaphase II", "Anaphase I", "Telophase II"],
+    "answer": 3
+},
+{
+    "question": "Which of the following is an example of passive transport?",
+    "options": ["Osmosis", "Endocytosis", "Exocytosis", "Active transport"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the Golgi apparatus?",
+    "options": ["Protein synthesis", "Lipid production", "Modifying and packaging proteins", "Storing genetic material"],
+    "answer": 2
+},
+{
+    "question": "In which type of cell does binary fission occur?",
+    "options": ["Eukaryotic cells", "Prokaryotic cells", "Animal cells", "Plant cells"],
+    "answer": 1
+},
+{
+    "question": "What is the term for a group of similar cells that work together to perform a specific function?",
+    "options": ["Tissue", "Organ", "Organism", "System"],
+    "answer": 0
+},
+      {
+    "question": "Which organelle is responsible for the synthesis of lipids?",
+    "options": ["Rough endoplasmic reticulum", "Smooth endoplasmic reticulum", "Nucleus", "Golgi apparatus"],
+    "answer": 1
+},
+{
+    "question": "What is the purpose of the nucleolus?",
+    "options": ["To produce ribosomes", "To store genetic material", "To produce energy", "To synthesize proteins"],
+    "answer": 0
+},
+{
+    "question": "Which molecule is responsible for carrying genetic information from the DNA to the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "DNA"],
+    "answer": 0
+},
+{
+    "question": "What type of bond holds complementary base pairs together in DNA?",
+    "options": ["Ionic bonds", "Covalent bonds", "Hydrogen bonds", "Peptide bonds"],
+    "answer": 2
+},
+{
+    "question": "Which stage of mitosis involves the division of the cytoplasm?",
+    "options": ["Prophase", "Metaphase", "Anaphase", "Cytokinesis"],
+    "answer": 3
+},
+{
+    "question": "Which cell structure controls the passage of materials into and out of the cell?",
+    "options": ["Cell wall", "Nucleus", "Cell membrane", "Chloroplast"],
+    "answer": 2
+},
+{
+    "question": "In which process does DNA replicate itself?",
+    "options": ["Mitosis", "Meiosis", "DNA transcription", "DNA replication"],
+    "answer": 3
+},
+{
+    "question": "What is the purpose of the centrosome in the cell?",
+    "options": ["To organize microtubules", "To synthesize proteins", "To store DNA", "To carry out cellular respiration"],
+    "answer": 0
+},
+{
+    "question": "During which phase of the cell cycle does the cell grow and carry out normal functions?",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is a major difference between prokaryotic and eukaryotic cells?",
+    "options": ["Prokaryotic cells have a nucleus", "Eukaryotic cells lack a plasma membrane", "Prokaryotic cells lack a nucleus", "Eukaryotic cells have no ribosomes"],
+    "answer": 2
+},
+{
+    "question": "What is the structure of a chromosome during cell division?",
+    "options": ["Single strand", "Two sister chromatids connected by a centromere", "DNA strands", "Protein molecules"],
+    "answer": 1
+},
+{
+    "question": "Which part of the cell is responsible for making proteins?",
+    "options": ["Nucleus", "Endoplasmic reticulum", "Mitochondria", "Ribosomes"],
+    "answer": 3
+},
+{
+    "question": "What is the difference between mitosis and meiosis?",
+    "options": ["Mitosis results in four cells, while meiosis results in two", "Meiosis involves crossing over, mitosis does not", "Mitosis is used for reproduction, meiosis is for growth", "Mitosis occurs in prokaryotes, meiosis in eukaryotes"],
+    "answer": 1
+},
+{
+    "question": "Which of the following processes does NOT occur during meiosis?",
+    "options": ["Cytokinesis", "Crossing over", "DNA replication", "Chromosome segregation"],
+    "answer": 2
+},
+{
+    "question": "Which of the following is true about DNA replication?",
+    "options": ["It occurs during the G1 phase", "It happens in the cytoplasm", "It occurs during the S phase of the cell cycle", "It is independent of the cell cycle"],
+    "answer": 2
+},
+{
+    "question": "Which type of RNA is involved in the translation process?",
+    "options": ["mRNA", "tRNA", "rRNA", "All of the above"],
+    "answer": 3
+},
+{
+    "question": "What does the term 'haploid' refer to?",
+    "options": ["A cell with two sets of chromosomes", "A cell with a full set of chromosomes", "A cell with a single set of chromosomes", "A cell with no chromosomes"],
+    "answer": 2
+},
+{
+    "question": "Which of the following best describes a plasmid?",
+    "options": ["A small circular DNA molecule found in prokaryotes", "A type of RNA", "A protein found in ribosomes", "A large chromosome in eukaryotes"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the smooth endoplasmic reticulum?",
+    "options": ["Lipid synthesis", "Protein synthesis", "DNA replication", "Cell division"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is NOT a function of the cell wall?",
+    "options": ["Providing structural support", "Regulating transport into the cell", "Protecting the cell", "Providing rigidity"],
+    "answer": 1
+}
+  ],
+           "human-anatomy": [
+    {
+      "question": "Which organ is responsible for detoxifying blood?",
+      "options": ["Heart", "Kidney", "Liver", "Lungs"],
+      "answer": 2
+    },
+    {
+      "question": "How many chambers does the human heart have?",
+      "options": ["2", "3", "4", "5"],
+      "answer": 2
+    },
+    {
+      "question": "Which bone is the longest in the human body?",
+      "options": ["Radius", "Femur", "Tibia", "Humerus"],
+      "answer": 1
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "options": ["Liver", "Brain", "Skin", "Large intestine"],
+      "answer": 2
+    },
+    {
+      "question": "Which gland regulates metabolism in the human body?",
+      "options": ["Pituitary", "Thyroid", "Adrenal", "Pancreas"],
+      "answer": 1
+    },
+      {
+    "question": "Which structure in the human body is responsible for filtering blood and producing urine?",
+    "options": ["Kidneys", "Liver", "Lungs", "Heart"],
+    "answer": 0
+},
+{
+    "question": "Which bone is known as the 'collarbone' in the human body?",
+    "options": ["Clavicle", "Scapula", "Sternum", "Humerus"],
+    "answer": 0
+},
+{
+    "question": "Which organ is primarily responsible for producing insulin in the human body?",
+    "options": ["Pancreas", "Liver", "Stomach", "Kidneys"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of red blood cells?",
+    "options": ["Transport oxygen", "Fight infections", "Produce hormones", "Clot blood"],
+    "answer": 0
+},
+{
+    "question": "What type of joint is found in the human knee?",
+    "options": ["Hinge joint", "Ball and socket joint", "Pivot joint", "Gliding joint"],
+    "answer": 0
+},
+{
+    "question": "Which part of the brain is responsible for regulating heartbeat and breathing?",
+    "options": ["Medulla oblongata", "Cerebellum", "Cerebrum", "Thalamus"],
+    "answer": 0
+},
+{
+    "question": "Which layer of skin is primarily responsible for producing new skin cells?",
+    "options": ["Epidermis", "Dermis", "Hypodermis", "Subcutaneous layer"],
+    "answer": 0
+},
+{
+    "question": "Which organ in the human body is responsible for detoxifying harmful substances and metabolizing drugs?",
+    "options": ["Liver", "Kidneys", "Lungs", "Pancreas"],
+    "answer": 0
+},
+{
+    "question": "Which structure connects muscles to bones in the human body?",
+    "options": ["Tendons", "Ligaments", "Cartilage", "Joints"],
+    "answer": 0
+},
+{
+    "question": "What is the largest organ in the human body?",
+    "options": ["Skin", "Liver", "Lungs", "Heart"],
+    "answer": 0
+},
+{
+    "question": "Which part of the human eye is responsible for controlling the amount of light that enters?",
+    "options": ["Pupil", "Cornea", "Retina", "Lens"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the human spleen?",
+    "options": ["Filter blood", "Store urine", "Produce insulin", "Regulate body temperature"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the human lymphatic system?",
+    "options": ["Transport lymph and protect the body from infection", "Circulate oxygen and nutrients", "Transport food and waste", "Provide support to muscles"],
+    "answer": 0
+},
+{
+    "question": "Which muscle is responsible for the contraction of the heart?",
+    "options": ["Cardiac muscle", "Smooth muscle", "Skeletal muscle", "Striated muscle"],
+    "answer": 0
+},
+{
+    "question": "Which part of the brain is responsible for balance and coordination?",
+    "options": ["Cerebellum", "Medulla oblongata", "Cerebrum", "Pons"],
+    "answer": 0
+},
+{
+    "question": "Which type of blood vessel carries blood away from the heart?",
+    "options": ["Arteries", "Veins", "Capillaries", "Lymphatic vessels"],
+    "answer": 0
+},
+{
+    "question": "Which gland in the human body is responsible for producing adrenaline?",
+    "options": ["Adrenal glands", "Pituitary gland", "Thyroid gland", "Pineal gland"],
+    "answer": 0
+},
+{
+    "question": "What is the name of the flap that prevents food from entering the trachea during swallowing?",
+    "options": ["Epiglottis", "Uvula", "Larynx", "Pharynx"],
+    "answer": 0
+},
+{
+    "question": "Which part of the digestive system is responsible for absorbing nutrients from food?",
+    "options": ["Small intestine", "Large intestine", "Stomach", "Mouth"],
+    "answer": 0
+},
+{
+    "question": "Which structure in the human body helps protect the spinal cord?",
+    "options": ["Vertebrae", "Ribs", "Sternum", "Pelvis"],
+    "answer": 0
+},
+      {
+    "question": "Which part of the human brain is responsible for higher cognitive functions like reasoning and planning?",
+    "options": ["Frontal lobe", "Temporal lobe", "Occipital lobe", "Parietal lobe"],
+    "answer": 0
+},
+{
+    "question": "Which component of blood helps in clotting to prevent excessive bleeding?",
+    "options": ["Platelets", "Red blood cells", "White blood cells", "Plasma"],
+    "answer": 0
+},
+{
+    "question": "Which organ is responsible for producing bile to aid in digestion?",
+    "options": ["Liver", "Stomach", "Pancreas", "Small intestine"],
+    "answer": 0
+},
+{
+    "question": "Which structure in the eye controls the shape of the lens to focus light?",
+    "options": ["Ciliary muscles", "Pupil", "Cornea", "Retina"],
+    "answer": 0
+},
+{
+    "question": "Which organ in the human body is primarily responsible for regulating the body's metabolism?",
+    "options": ["Thyroid gland", "Pituitary gland", "Pancreas", "Adrenal glands"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body stores bile produced by the liver?",
+    "options": ["Gallbladder", "Stomach", "Pancreas", "Small intestine"],
+    "answer": 0
+},
+{
+    "question": "What is the main function of the human respiratory system?",
+    "options": ["To supply oxygen and remove carbon dioxide", "To digest food", "To regulate temperature", "To produce blood cells"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is the largest part of the human brain?",
+    "options": ["Cerebrum", "Cerebellum", "Medulla oblongata", "Pons"],
+    "answer": 0
+},
+{
+    "question": "Which type of blood vessel carries oxygen-rich blood back to the heart?",
+    "options": ["Veins", "Arteries", "Capillaries", "Lymphatic vessels"],
+    "answer": 0
+},
+{
+    "question": "Which type of connective tissue is responsible for connecting muscles to bones?",
+    "options": ["Tendons", "Ligaments", "Cartilage", "Adipose tissue"],
+    "answer": 0
+},
+{
+    "question": "Which structure in the human body prevents food from entering the lungs during swallowing?",
+    "options": ["Epiglottis", "Uvula", "Larynx", "Trachea"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the lymphatic system?",
+    "options": ["Transport lymph and support immune function", "Pump blood throughout the body", "Regulate body temperature", "Store nutrients"],
+    "answer": 0
+},
+{
+    "question": "Which muscle tissue is voluntary and controlled consciously by the brain?",
+    "options": ["Skeletal muscle", "Cardiac muscle", "Smooth muscle", "Striated muscle"],
+    "answer": 0
+},
+{
+    "question": "What is the name of the fluid that lubricates joints in the human body?",
+    "options": ["Synovial fluid", "Blood", "Lymph", "Cerebrospinal fluid"],
+    "answer": 0
+},
+{
+    "question": "Which structure in the human body is responsible for the sense of hearing?",
+    "options": ["Ear", "Nose", "Eyes", "Skin"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the pancreas in the digestive system?",
+    "options": ["Produce digestive enzymes and insulin", "Store bile", "Secrete hydrochloric acid", "Absorb nutrients"],
+    "answer": 0
+},
+{
+    "question": "Which part of the human body is responsible for controlling balance?",
+    "options": ["Inner ear", "Eyes", "Nose", "Skin"],
+    "answer": 0
+},
+{
+    "question": "Which blood type is considered the universal donor?",
+    "options": ["O-", "AB+", "A+", "B-"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body regulates the body's circadian rhythm and sleep-wake cycle?",
+    "options": ["Pineal gland", "Pituitary gland", "Thyroid gland", "Adrenal glands"],
+    "answer": 0
+},
+{
+    "question": "Which system in the body is responsible for protecting against disease-causing organisms?",
+    "options": ["Immune system", "Nervous system", "Muscular system", "Endocrine system"],
+    "answer": 0
+},
+      {
+    "question": "What is the primary function of the red blood cells?",
+    "options": ["Transport oxygen", "Fight infections", "Clot blood", "Regulate temperature"],
+    "answer": 0
+},
+{
+    "question": "What part of the human brain is responsible for regulating heart rate and breathing?",
+    "options": ["Medulla oblongata", "Cerebellum", "Cerebrum", "Thalamus"],
+    "answer": 0
+},
+{
+    "question": "What is the largest organ in the human body?",
+    "options": ["Skin", "Liver", "Heart", "Lungs"],
+    "answer": 0
+},
+{
+    "question": "Which part of the human body stores glycogen for energy?",
+    "options": ["Liver", "Muscles", "Brain", "Pancreas"],
+    "answer": 0
+},
+{
+    "question": "Which type of muscle tissue is found in the heart?",
+    "options": ["Cardiac muscle", "Smooth muscle", "Skeletal muscle", "Striated muscle"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is the function of the kidneys?",
+    "options": ["Filter waste from the blood", "Produce insulin", "Regulate heartbeat", "Store bile"],
+    "answer": 0
+},
+{
+    "question": "Which hormone is responsible for regulating metabolism?",
+    "options": ["Thyroxine", "Insulin", "Adrenaline", "Estrogen"],
+    "answer": 0
+},
+{
+    "question": "Which part of the human digestive system absorbs most of the nutrients from food?",
+    "options": ["Small intestine", "Stomach", "Large intestine", "Liver"],
+    "answer": 0
+},
+{
+    "question": "What is the main function of the spleen?",
+    "options": ["Filter blood", "Produce digestive enzymes", "Regulate body temperature", "Store nutrients"],
+    "answer": 0
+},
+{
+    "question": "Which structure prevents food from entering the windpipe during swallowing?",
+    "options": ["Epiglottis", "Uvula", "Esophagus", "Pharynx"],
+    "answer": 0
+},
+{
+    "question": "Which blood cells are primarily responsible for immune responses?",
+    "options": ["White blood cells", "Red blood cells", "Platelets", "Plasma"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body is primarily responsible for filtering waste products from the blood?",
+    "options": ["Kidneys", "Liver", "Lungs", "Stomach"],
+    "answer": 0
+},
+{
+    "question": "Which part of the human eye adjusts to control the amount of light entering?",
+    "options": ["Pupil", "Cornea", "Retina", "Lens"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the lungs?",
+    "options": ["Oxygenate the blood", "Pump blood throughout the body", "Digest food", "Store nutrients"],
+    "answer": 0
+},
+{
+    "question": "Which system of the body is responsible for transporting nutrients, gases, and waste?",
+    "options": ["Circulatory system", "Nervous system", "Endocrine system", "Muscular system"],
+    "answer": 0
+},
+{
+    "question": "What type of tissue connects muscles to bones?",
+    "options": ["Tendons", "Ligaments", "Cartilage", "Muscle tissue"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is the function of the thymus?",
+    "options": ["Immune system regulation", "Production of digestive enzymes", "Regulation of metabolism", "Storage of blood cells"],
+    "answer": 0
+},
+{
+    "question": "Which bone in the body protects the brain?",
+    "options": ["Skull", "Spine", "Ribs", "Pelvis"],
+    "answer": 0
+},
+{
+    "question": "Which part of the nervous system controls voluntary movements?",
+    "options": ["Somatic nervous system", "Autonomic nervous system", "Central nervous system", "Peripheral nervous system"],
+    "answer": 0
+},
+{
+    "question": "Which type of connective tissue connects bones to other bones?",
+    "options": ["Ligaments", "Tendons", "Cartilage", "Fat tissue"],
+    "answer": 0
+},
+      {
+    "question": "Which structure in the human body stores bile?",
+    "options": ["Gallbladder", "Liver", "Kidney", "Pancreas"],
+    "answer": 0
+},
+{
+    "question": "What is the primary role of the pituitary gland?",
+    "options": ["Regulate hormones", "Filter waste", "Maintain blood pressure", "Store energy"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body is responsible for producing insulin?",
+    "options": ["Pancreas", "Liver", "Stomach", "Spleen"],
+    "answer": 0
+},
+{
+    "question": "Which structure connects the muscles to the bones?",
+    "options": ["Tendons", "Ligaments", "Nerves", "Veins"],
+    "answer": 0
+},
+{
+    "question": "Which part of the human eye allows you to see color?",
+    "options": ["Retina", "Lens", "Cornea", "Pupil"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the lymphatic system?",
+    "options": ["Maintain immune function", "Digest food", "Control movement", "Regulate body temperature"],
+    "answer": 0
+},
+{
+    "question": "Which part of the digestive system is primarily responsible for the absorption of water?",
+    "options": ["Large intestine", "Small intestine", "Stomach", "Liver"],
+    "answer": 0
+},
+{
+    "question": "Which type of blood vessel carries oxygenated blood from the heart to the body?",
+    "options": ["Arteries", "Veins", "Capillaries", "Lymphatic vessels"],
+    "answer": 0
+},
+{
+    "question": "Which organ is primarily responsible for detoxifying the body?",
+    "options": ["Liver", "Kidneys", "Lungs", "Skin"],
+    "answer": 0
+},
+{
+    "question": "Which component of the human skeleton is responsible for producing blood cells?",
+    "options": ["Bone marrow", "Cartilage", "Ligaments", "Tendons"],
+    "answer": 0
+},
+{
+    "question": "Which part of the nervous system controls involuntary functions like heart rate and breathing?",
+    "options": ["Autonomic nervous system", "Somatic nervous system", "Peripheral nervous system", "Central nervous system"],
+    "answer": 0
+},
+{
+    "question": "Which type of blood cell is responsible for clotting?",
+    "options": ["Platelets", "White blood cells", "Red blood cells", "Plasma"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body produces red blood cells?",
+    "options": ["Bone marrow", "Liver", "Kidneys", "Lungs"],
+    "answer": 0
+},
+{
+    "question": "Which organ is responsible for regulating blood sugar levels?",
+    "options": ["Pancreas", "Liver", "Heart", "Spleen"],
+    "answer": 0
+},
+{
+    "question": "Which hormone is responsible for the fight-or-flight response?",
+    "options": ["Adrenaline", "Insulin", "Cortisol", "Estrogen"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body produces cerebrospinal fluid?",
+    "options": ["Choroid plexus", "Brainstem", "Spinal cord", "Thalamus"],
+    "answer": 0
+},
+{
+    "question": "Which organ is responsible for filtering blood to remove waste products?",
+    "options": ["Kidneys", "Liver", "Heart", "Lungs"],
+    "answer": 0
+},
+{
+    "question": "Which structure helps to regulate the amount of light entering the eye?",
+    "options": ["Pupil", "Lens", "Cornea", "Retina"],
+    "answer": 0
+},
+{
+    "question": "What is the role of the alveoli in the lungs?",
+    "options": ["Gas exchange", "Filter air", "Produce mucus", "Regulate breathing rate"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is responsible for protecting the body from infections?",
+    "options": ["Immune system", "Circulatory system", "Nervous system", "Endocrine system"],
+    "answer": 0
+},
+      {
+    "question": "Which part of the brain controls balance and coordination?",
+    "options": ["Cerebellum", "Cerebrum", "Medulla oblongata", "Pons"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the spleen?",
+    "options": ["Filter blood", "Regulate blood sugar", "Produce bile", "Store red blood cells"],
+    "answer": 0
+},
+{
+    "question": "Which type of muscle is responsible for voluntary movements?",
+    "options": ["Skeletal muscle", "Smooth muscle", "Cardiac muscle", "Striated muscle"],
+    "answer": 0
+},
+{
+    "question": "Which part of the digestive system is responsible for the majority of nutrient absorption?",
+    "options": ["Small intestine", "Large intestine", "Stomach", "Pancreas"],
+    "answer": 0
+},
+{
+    "question": "What is the name of the fluid that surrounds and cushions the brain and spinal cord?",
+    "options": ["Cerebrospinal fluid", "Synovial fluid", "Lymph", "Blood plasma"],
+    "answer": 0
+},
+{
+    "question": "Which organ in the human body is responsible for controlling the body's temperature?",
+    "options": ["Hypothalamus", "Thalamus", "Medulla", "Pituitary gland"],
+    "answer": 0
+},
+{
+    "question": "Which type of blood vessel carries deoxygenated blood to the heart?",
+    "options": ["Veins", "Arteries", "Capillaries", "Venules"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the human lymphatic system?",
+    "options": ["Fight infections", "Regulate temperature", "Maintain blood pressure", "Absorb nutrients"],
+    "answer": 0
+},
+{
+    "question": "Which part of the human body is involved in the production of white blood cells?",
+    "options": ["Bone marrow", "Spleen", "Thymus", "Liver"],
+    "answer": 0
+},
+{
+    "question": "Which organ is responsible for storing bile?",
+    "options": ["Gallbladder", "Liver", "Pancreas", "Small intestine"],
+    "answer": 0
+},
+{
+    "question": "Which structure in the human body acts as a barrier against infection by trapping pathogens?",
+    "options": ["Skin", "Liver", "Brain", "Lungs"],
+    "answer": 0
+},
+{
+    "question": "Which part of the eye is responsible for focusing light onto the retina?",
+    "options": ["Lens", "Cornea", "Pupil", "Retina"],
+    "answer": 0
+},
+{
+    "question": "Which of the following hormones is secreted by the thyroid gland?",
+    "options": ["Thyroxine", "Insulin", "Adrenaline", "Cortisol"],
+    "answer": 0
+},
+{
+    "question": "Which part of the respiratory system is primarily responsible for gas exchange?",
+    "options": ["Alveoli", "Bronchi", "Trachea", "Lungs"],
+    "answer": 0
+},
+{
+    "question": "Which organ helps in detoxifying harmful substances in the body?",
+    "options": ["Liver", "Kidney", "Lungs", "Skin"],
+    "answer": 0
+},
+{
+    "question": "Which type of cell is responsible for transmitting electrical signals in the body?",
+    "options": ["Neuron", "Muscle cell", "Red blood cell", "Epithelial cell"],
+    "answer": 0
+},
+{
+    "question": "Which organ is primarily responsible for producing urine?",
+    "options": ["Kidneys", "Liver", "Bladder", "Ureters"],
+    "answer": 0
+},
+{
+    "question": "Which structure in the brain is responsible for regulating hunger and thirst?",
+    "options": ["Hypothalamus", "Medulla oblongata", "Cerebellum", "Cerebrum"],
+    "answer": 0
+},
+{
+    "question": "Which type of connective tissue connects muscles to bones?",
+    "options": ["Tendons", "Ligaments", "Cartilage", "Adipose tissue"],
+    "answer": 0
+},
+{
+    "question": "What is the main function of red blood cells?",
+    "options": ["Transport oxygen", "Fight infections", "Aid in clotting", "Regulate blood pressure"],
+    "answer": 0
+},
+      {
+    "question": "What structure in the human body carries oxygenated blood away from the heart?",
+    "options": ["Arteries", "Veins", "Capillaries", "Venules"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is the largest organ in the human body?",
+    "options": ["Skin", "Liver", "Lungs", "Heart"],
+    "answer": 0
+},
+{
+    "question": "Which part of the brain is responsible for regulating vital functions like heart rate and breathing?",
+    "options": ["Medulla oblongata", "Cerebellum", "Cerebrum", "Pons"],
+    "answer": 0
+},
+{
+    "question": "Which part of the immune system produces antibodies?",
+    "options": ["B cells", "T cells", "Macrophages", "Neutrophils"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is the primary component of the cell membrane?",
+    "options": ["Phospholipids", "Proteins", "Carbohydrates", "Nucleic acids"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is NOT a function of the liver?",
+    "options": ["Production of insulin", "Detoxification", "Bile production", "Storage of glycogen"],
+    "answer": 0
+},
+{
+    "question": "Which type of cell in the human body is responsible for carrying oxygen?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Epithelial cells"],
+    "answer": 0
+},
+{
+    "question": "Which part of the brain is responsible for processing sensory information?",
+    "options": ["Cerebrum", "Cerebellum", "Thalamus", "Hypothalamus"],
+    "answer": 0
+},
+{
+    "question": "Which of the following muscles is responsible for the movement of the diaphragm?",
+    "options": ["Intercostal muscles", "Diaphragm", "Abdominal muscles", "Skeletal muscles"],
+    "answer": 0
+},
+{
+    "question": "Which part of the cell is responsible for generating energy?",
+    "options": ["Mitochondria", "Nucleus", "Endoplasmic reticulum", "Ribosomes"],
+    "answer": 0
+},
+{
+    "question": "Which hormone regulates the metabolism of glucose in the body?",
+    "options": ["Insulin", "Cortisol", "Adrenaline", "Testosterone"],
+    "answer": 0
+},
+{
+    "question": "Which structure within the cell is responsible for protein synthesis?",
+    "options": ["Ribosomes", "Nucleus", "Golgi apparatus", "Lysosomes"],
+    "answer": 0
+},
+{
+    "question": "Which part of the eye controls the amount of light entering?",
+    "options": ["Pupil", "Cornea", "Lens", "Retina"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is the primary function of the kidneys?",
+    "options": ["Filtration of blood", "Production of bile", "Regulation of body temperature", "Absorption of nutrients"],
+    "answer": 0
+},
+{
+    "question": "What part of the human body is involved in the production of blood cells?",
+    "options": ["Bone marrow", "Liver", "Spleen", "Thymus"],
+    "answer": 0
+},
+{
+    "question": "Which part of the cell controls the activities of the cell?",
+    "options": ["Nucleus", "Mitochondria", "Ribosomes", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "Which type of connective tissue cushions and insulates the body?",
+    "options": ["Adipose tissue", "Bone tissue", "Blood tissue", "Cartilage"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the small intestine?",
+    "options": ["Absorption of nutrients", "Storage of food", "Digesting proteins", "Secretion of enzymes"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body controls the production of hormones that regulate growth?",
+    "options": ["Pituitary gland", "Thyroid gland", "Adrenal glands", "Pancreas"],
+    "answer": 0
+},
+{
+    "question": "Which structure in the heart prevents the backflow of blood?",
+    "options": ["Valves", "Aorta", "Ventricles", "Arteries"],
+    "answer": 0
+},
+      {
+    "question": "Which organ is responsible for filtering waste from the blood?",
+    "options": ["Kidneys", "Liver", "Heart", "Lungs"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of red blood cells?",
+    "options": ["Transport oxygen", "Fight infections", "Clot blood", "Digest food"],
+    "answer": 0
+},
+{
+    "question": "Which part of the brain controls balance and coordination?",
+    "options": ["Cerebellum", "Medulla", "Pons", "Cerebrum"],
+    "answer": 0
+},
+{
+    "question": "Which structure in the cell is responsible for storing genetic information?",
+    "options": ["Nucleus", "Mitochondria", "Endoplasmic reticulum", "Golgi apparatus"],
+    "answer": 0
+},
+{
+    "question": "Which part of the human body produces insulin?",
+    "options": ["Pancreas", "Liver", "Stomach", "Adrenal glands"],
+    "answer": 0
+},
+{
+    "question": "Which bone protects the brain?",
+    "options": ["Skull", "Ribs", "Spine", "Pelvis"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body is responsible for the sense of smell?",
+    "options": ["Nose", "Ears", "Eyes", "Skin"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body connects muscles to bones?",
+    "options": ["Tendons", "Ligaments", "Nerves", "Blood vessels"],
+    "answer": 0
+},
+{
+    "question": "What type of tissue is responsible for contracting and producing movement?",
+    "options": ["Muscle tissue", "Nervous tissue", "Epithelial tissue", "Connective tissue"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the lymphatic system?",
+    "options": ["Transporting immune cells", "Producing hormones", "Digesting food", "Regulating body temperature"],
+    "answer": 0
+},
+{
+    "question": "Which structure within the cell is responsible for converting food into energy?",
+    "options": ["Mitochondria", "Nucleus", "Cytoplasm", "Ribosomes"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is the main function of the respiratory system?",
+    "options": ["Exchanging gases", "Transporting nutrients", "Circulating blood", "Producing hormones"],
+    "answer": 0
+},
+{
+    "question": "Which part of the eye helps focus light onto the retina?",
+    "options": ["Lens", "Cornea", "Iris", "Pupil"],
+    "answer": 0
+},
+{
+    "question": "What part of the body is primarily responsible for digestion?",
+    "options": ["Stomach", "Liver", "Kidneys", "Pancreas"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is NOT a type of muscle tissue?",
+    "options": ["Cardiac muscle", "Smooth muscle", "Skeletal muscle", "Connective muscle"],
+    "answer": 3
+},
+{
+    "question": "Which part of the digestive system absorbs most nutrients?",
+    "options": ["Small intestine", "Large intestine", "Stomach", "Esophagus"],
+    "answer": 0
+},
+{
+    "question": "Which type of cell in the body is responsible for carrying electrical impulses?",
+    "options": ["Nerve cells", "Muscle cells", "Blood cells", "Bone cells"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the large intestine?",
+    "options": ["Absorb water and salts", "Digest proteins", "Filter toxins", "Produce bile"],
+    "answer": 0
+},
+{
+    "question": "Which of the following glands is responsible for regulating metabolism?",
+    "options": ["Thyroid gland", "Adrenal glands", "Pituitary gland", "Pineal gland"],
+    "answer": 0
+},
+      {
+    "question": "Which part of the body is responsible for pumping blood?",
+    "options": ["Heart", "Liver", "Lungs", "Kidneys"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the alveoli in the lungs?",
+    "options": ["Gas exchange", "Oxygen transport", "Blood circulation", "Muscle contraction"],
+    "answer": 0
+},
+{
+    "question": "Which bone is the largest in the human body?",
+    "options": ["Femur", "Humerus", "Tibia", "Fibula"],
+    "answer": 0
+},
+{
+    "question": "Which structure connects the brain to the spinal cord?",
+    "options": ["Medulla oblongata", "Cerebellum", "Cerebrum", "Pons"],
+    "answer": 0
+},
+{
+    "question": "What type of tissue is responsible for transmitting electrical signals?",
+    "options": ["Nervous tissue", "Muscle tissue", "Epithelial tissue", "Connective tissue"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the lymphatic system?",
+    "options": ["Fighting infections", "Circulating oxygen", "Transporting nutrients", "Absorbing fats"],
+    "answer": 0
+},
+{
+    "question": "Which part of the body is responsible for regulating body temperature?",
+    "options": ["Hypothalamus", "Thalamus", "Cerebellum", "Pineal gland"],
+    "answer": 0
+},
+{
+    "question": "What part of the nervous system controls involuntary actions like heart rate?",
+    "options": ["Autonomic nervous system", "Somatic nervous system", "Peripheral nervous system", "Central nervous system"],
+    "answer": 0
+},
+{
+    "question": "Which organ is primarily responsible for detoxifying chemicals in the body?",
+    "options": ["Liver", "Kidneys", "Lungs", "Stomach"],
+    "answer": 0
+},
+{
+    "question": "What is the main function of the pancreas?",
+    "options": ["Regulate blood sugar", "Filter blood", "Produce insulin", "Digest food"],
+    "answer": 0
+},
+{
+    "question": "Which type of muscle is found in the walls of internal organs?",
+    "options": ["Smooth muscle", "Skeletal muscle", "Cardiac muscle", "Striated muscle"],
+    "answer": 0
+},
+{
+    "question": "Which part of the cell is responsible for controlling what enters and leaves?",
+    "options": ["Cell membrane", "Nucleus", "Cytoplasm", "Mitochondria"],
+    "answer": 0
+},
+{
+    "question": "Which system is responsible for the production of hormones?",
+    "options": ["Endocrine system", "Nervous system", "Muscular system", "Circulatory system"],
+    "answer": 0
+},
+{
+    "question": "Which of the following is NOT a part of the central nervous system?",
+    "options": ["Spinal cord", "Brain", "Peripheral nerves", "Both brain and spinal cord"],
+    "answer": 2
+},
+{
+    "question": "Which organ system is responsible for the breakdown of food?",
+    "options": ["Digestive system", "Respiratory system", "Circulatory system", "Excretory system"],
+    "answer": 0
+},
+{
+    "question": "Which part of the brain is responsible for memory and learning?",
+    "options": ["Hippocampus", "Medulla oblongata", "Thalamus", "Cerebellum"],
+    "answer": 0
+},
+{
+    "question": "Which type of joint allows for the most movement in the human body?",
+    "options": ["Ball-and-socket joint", "Hinge joint", "Pivot joint", "Saddle joint"],
+    "answer": 0
+},
+{
+    "question": "What type of blood vessels carry oxygenated blood away from the heart?",
+    "options": ["Arteries", "Veins", "Capillaries", "Arterioles"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the red bone marrow?",
+    "options": ["Produce blood cells", "Store calcium", "Provide support", "Produce collagen"],
+    "answer": 0
+},
+      {
+    "question": "Which organ is responsible for producing bile?",
+    "options": ["Liver", "Stomach", "Pancreas", "Small intestine"],
+    "answer": 0
+},
+{
+    "question": "What part of the brain controls balance and coordination?",
+    "options": ["Cerebellum", "Medulla oblongata", "Cerebrum", "Thalamus"],
+    "answer": 0
+},
+{
+    "question": "Which system is primarily responsible for transporting nutrients, gases, and wastes?",
+    "options": ["Circulatory system", "Endocrine system", "Muscular system", "Skeletal system"],
+    "answer": 0
+},
+{
+    "question": "What is the primary role of the white blood cells?",
+    "options": ["Fight infections", "Carry oxygen", "Clot blood", "Transport nutrients"],
+    "answer": 0
+},
+{
+    "question": "Which of the following structures is part of the respiratory system?",
+    "options": ["Trachea", "Esophagus", "Liver", "Kidney"],
+    "answer": 0
+},
+{
+    "question": "Which organ is responsible for regulating blood pressure and volume?",
+    "options": ["Kidneys", "Liver", "Heart", "Lungs"],
+    "answer": 0
+},
+{
+    "question": "Which tissue type forms the outer layer of the skin?",
+    "options": ["Epithelial tissue", "Muscle tissue", "Connective tissue", "Nervous tissue"],
+    "answer": 0
+},
+{
+    "question": "What is the function of hemoglobin in red blood cells?",
+    "options": ["Oxygen transport", "Fighting infection", "Blood clotting", "Nutrient transport"],
+    "answer": 0
+},
+{
+    "question": "Which part of the cell produces ATP (energy)?",
+    "options": ["Mitochondria", "Nucleus", "Ribosome", "Endoplasmic reticulum"],
+    "answer": 0
+},
+{
+    "question": "Which part of the circulatory system has the thinnest walls for nutrient and gas exchange?",
+    "options": ["Capillaries", "Veins", "Arteries", "Venules"],
+    "answer": 0
+},
+{
+    "question": "What is the name of the membrane surrounding the lungs?",
+    "options": ["Pleura", "Pericardium", "Peritoneum", "Meninges"],
+    "answer": 0
+},
+{
+    "question": "Which type of connective tissue stores fat?",
+    "options": ["Adipose tissue", "Bone tissue", "Blood tissue", "Cartilage tissue"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the large intestine?",
+    "options": ["Absorb water and salts", "Digest food", "Produce bile", "Absorb nutrients"],
+    "answer": 0
+},
+{
+    "question": "Which component of the blood is responsible for clotting?",
+    "options": ["Platelets", "Red blood cells", "White blood cells", "Plasma"],
+    "answer": 0
+},
+{
+    "question": "Which organ system helps maintain body posture and facilitates movement?",
+    "options": ["Muscular system", "Skeletal system", "Nervous system", "Cardiovascular system"],
+    "answer": 0
+},
+{
+    "question": "Which structure is responsible for producing insulin?",
+    "options": ["Pancreas", "Liver", "Stomach", "Small intestine"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the renal system?",
+    "options": ["Filter blood and produce urine", "Transport oxygen", "Digest food", "Fight infections"],
+    "answer": 0
+},
+{
+    "question": "Which type of muscle is responsible for voluntary movement?",
+    "options": ["Skeletal muscle", "Smooth muscle", "Cardiac muscle", "Striated muscle"],
+    "answer": 0
+},
+{
+    "question": "Which type of cell division results in the formation of gametes?",
+    "options": ["Meiosis", "Mitosis", "Binary fission", "Budding"],
+    "answer": 0
+},
+{
+    "question": "What is the role of the myelin sheath in neurons?",
+    "options": ["Insulate and speed up electrical transmission", "Transmit signals", "Store neurotransmitters", "Support the neuron"],
+    "answer": 0
+},
+      {
+    "question": "Which part of the brain is responsible for regulating heart rate and breathing?",
+    "options": ["Medulla oblongata", "Cerebellum", "Cerebrum", "Thalamus"],
+    "answer": 0
+},
+{
+    "question": "What structure in the eye controls the amount of light entering?",
+    "options": ["Pupil", "Lens", "Retina", "Cornea"],
+    "answer": 0
+},
+{
+    "question": "Which organ system includes the skin, hair, and nails?",
+    "options": ["Integumentary system", "Nervous system", "Endocrine system", "Skeletal system"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the ribosomes in a cell?",
+    "options": ["Protein synthesis", "Energy production", "DNA replication", "Lipid synthesis"],
+    "answer": 0
+},
+{
+    "question": "Which bone is the largest and strongest in the human body?",
+    "options": ["Femur", "Humerus", "Spine", "Pelvis"],
+    "answer": 0
+},
+{
+    "question": "Which process involves the movement of water from the roots of a plant to the leaves?",
+    "options": ["Transpiration", "Photosynthesis", "Respiration", "Evaporation"],
+    "answer": 0
+},
+{
+    "question": "Which organ is responsible for filtering toxins from the blood?",
+    "options": ["Liver", "Kidneys", "Heart", "Stomach"],
+    "answer": 1
+},
+{
+    "question": "What type of blood vessel carries blood away from the heart?",
+    "options": ["Arteries", "Veins", "Capillaries", "Lymphatic vessels"],
+    "answer": 0
+},
+{
+    "question": "What is the primary function of the small intestine?",
+    "options": ["Nutrient absorption", "Digestion of fats", "Absorption of water", "Production of bile"],
+    "answer": 0
+},
+{
+    "question": "Which organ is primarily responsible for the detoxification of alcohol?",
+    "options": ["Liver", "Kidneys", "Lungs", "Heart"],
+    "answer": 0
+},
+{
+    "question": "Which system regulates hormones and metabolism?",
+    "options": ["Endocrine system", "Circulatory system", "Nervous system", "Immune system"],
+    "answer": 0
+},
+{
+    "question": "Which part of the neuron receives signals from other neurons?",
+    "options": ["Dendrites", "Axon", "Myelin sheath", "Cell body"],
+    "answer": 0
+},
+{
+    "question": "What is the main function of the lymphatic system?",
+    "options": ["Immune defense", "Transport oxygen", "Digest food", "Control body temperature"],
+    "answer": 0
+},
+{
+    "question": "Which blood type is considered the universal donor?",
+    "options": ["O-", "AB-", "A+", "B+"],
+    "answer": 0
+},
+{
+    "question": "Which organ system is responsible for the production of gametes?",
+    "options": ["Reproductive system", "Nervous system", "Endocrine system", "Muscular system"],
+    "answer": 0
+},
+{
+    "question": "What is the term for the breakdown of food into smaller components that can be absorbed by the body?",
+    "options": ["Digestion", "Excretion", "Respiration", "Metabolism"],
+    "answer": 0
+},
+{
+    "question": "Which structure in the ear is responsible for balance?",
+    "options": ["Semicircular canals", "Cochlea", "Auditory nerve", "Ear drum"],
+    "answer": 0
+},
+{
+    "question": "Which type of muscle is found in the heart?",
+    "options": ["Cardiac muscle", "Smooth muscle", "Skeletal muscle", "Striated muscle"],
+    "answer": 0
+},
+{
+    "question": "What is the function of the skeletal system?",
+    "options": ["Provide structure and support", "Produce energy", "Regulate hormones", "Transport oxygen"],
+    "answer": 0
+          }    
+]
+
+};
+        
         
         // Initialize the quiz
         function init() {
